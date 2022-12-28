@@ -1,0 +1,3695 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"1438 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"2000
+[v _TXSTA `Vuc ~T0 @X0 0 e@152 ]
+"1376
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"279
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"965
+[v _RCSTA `Vuc ~T0 @X0 0 e@24 ]
+"2081
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"3038
+[v _TXIF `Vb ~T0 @X0 0 e@100 ]
+"1060
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
+"3017
+[v _TRMT `Vb ~T0 @X0 0 e@1217 ]
+"2744
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"1067
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+"2516
+[v _CREN `Vb ~T0 @X0 0 e@196 ]
+"1500
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"341
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"2705
+[v _RC0 `Vb ~T0 @X0 0 e@56 ]
+"2708
+[v _RC1 `Vb ~T0 @X0 0 e@57 ]
+"34 queue.h
+[s S137 `ui 1 `uc 1 ]
+[n S137 Queue _data ht ]
+"1160 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2230
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"1326
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"2402
+[v _ADIF `Vb ~T0 @X0 0 e@102 ]
+"2399
+[v _ADIE `Vb ~T0 @X0 0 e@1126 ]
+"1153
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2223
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"26 pos.h
+[s S156 `uc 1 `uc 1 ]
+[n S156 Position x y ]
+"40 tetris.h
+[s S230 `uc -> 25 `i `uc 1 `uc 1 `uc 1 `uc 1 `ui 1 `*S137 1 ]
+[n S230 Tetris map shape shapeNext x y nextMap randset ]
+[p mainexit ]
+"46 main.c
+[v _setup `(v ~T0 @X0 0 ef ]
+"455 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[v _INTCON `Vuc ~T0 @X0 0 e@11 ]
+"2741
+[v _RCIE `Vb ~T0 @X0 0 e@1125 ]
+[t ~ __interrupt . k ]
+[t T4 __interrupt  ]
+"9 main.c
+[p x FOSC=XT ]
+"10
+[p x WDTE=OFF ]
+"11
+[p x PWRTE=OFF ]
+"12
+[p x BOREN=OFF ]
+"13
+[p x LVP=OFF ]
+"16
+[p x CPD=OFF ]
+"18
+[p x WRT=OFF ]
+"21
+[p x CP=OFF ]
+[; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
+[; ;xc.h: 20: extern double __fpnormalize(double);
+[; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef __int24 int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 52: typedef unsigned char uint8_t;
+[; ;stdint.h: 58: typedef unsigned int uint16_t;
+[; ;stdint.h: 65: typedef __uint24 uint24_t;
+[; ;stdint.h: 72: typedef unsigned long int uint32_t;
+[; ;stdint.h: 88: typedef signed char int_least8_t;
+[; ;stdint.h: 96: typedef signed int int_least16_t;
+[; ;stdint.h: 109: typedef __int24 int_least24_t;
+[; ;stdint.h: 118: typedef signed long int int_least32_t;
+[; ;stdint.h: 136: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 143: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 154: typedef __uint24 uint_least24_t;
+[; ;stdint.h: 162: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 181: typedef signed char int_fast8_t;
+[; ;stdint.h: 188: typedef signed int int_fast16_t;
+[; ;stdint.h: 200: typedef __int24 int_fast24_t;
+[; ;stdint.h: 208: typedef signed long int int_fast32_t;
+[; ;stdint.h: 224: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 230: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 240: typedef __uint24 uint_fast24_t;
+[; ;stdint.h: 247: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 268: typedef int32_t intmax_t;
+[; ;stdint.h: 282: typedef uint32_t uintmax_t;
+[; ;stdint.h: 289: typedef int16_t intptr_t;
+[; ;stdint.h: 294: typedef uint16_t uintptr_t;
+[; ;builtins.h: 8: extern void __nop(void);
+[; ;builtins.h: 12: extern __nonreentrant void _delay(uint32_t);
+[; ;builtins.h: 14: extern __nonreentrant void _delaywdt(uint32_t);
+[; ;pic16f877a.h: 53: extern volatile unsigned char INDF __at(0x000);
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[; ;pic16f877a.h: 55: asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+[; ;pic16f877a.h: 60: extern volatile unsigned char TMR0 __at(0x001);
+"62
+[; ;pic16f877a.h: 62: asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+[; ;pic16f877a.h: 67: extern volatile unsigned char PCL __at(0x002);
+"69
+[; ;pic16f877a.h: 69: asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+[; ;pic16f877a.h: 74: extern volatile unsigned char STATUS __at(0x003);
+"76
+[; ;pic16f877a.h: 76: asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+[; ;pic16f877a.h: 79: typedef union {
+[; ;pic16f877a.h: 80: struct {
+[; ;pic16f877a.h: 81: unsigned C :1;
+[; ;pic16f877a.h: 82: unsigned DC :1;
+[; ;pic16f877a.h: 83: unsigned Z :1;
+[; ;pic16f877a.h: 84: unsigned nPD :1;
+[; ;pic16f877a.h: 85: unsigned nTO :1;
+[; ;pic16f877a.h: 86: unsigned RP :2;
+[; ;pic16f877a.h: 87: unsigned IRP :1;
+[; ;pic16f877a.h: 88: };
+[; ;pic16f877a.h: 89: struct {
+[; ;pic16f877a.h: 90: unsigned :5;
+[; ;pic16f877a.h: 91: unsigned RP0 :1;
+[; ;pic16f877a.h: 92: unsigned RP1 :1;
+[; ;pic16f877a.h: 93: };
+[; ;pic16f877a.h: 94: struct {
+[; ;pic16f877a.h: 95: unsigned CARRY :1;
+[; ;pic16f877a.h: 96: unsigned :1;
+[; ;pic16f877a.h: 97: unsigned ZERO :1;
+[; ;pic16f877a.h: 98: };
+[; ;pic16f877a.h: 99: } STATUSbits_t;
+[; ;pic16f877a.h: 100: extern volatile STATUSbits_t STATUSbits __at(0x003);
+[; ;pic16f877a.h: 160: extern volatile unsigned char FSR __at(0x004);
+"162
+[; ;pic16f877a.h: 162: asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+[; ;pic16f877a.h: 167: extern volatile unsigned char PORTA __at(0x005);
+"169
+[; ;pic16f877a.h: 169: asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+[; ;pic16f877a.h: 172: typedef union {
+[; ;pic16f877a.h: 173: struct {
+[; ;pic16f877a.h: 174: unsigned RA0 :1;
+[; ;pic16f877a.h: 175: unsigned RA1 :1;
+[; ;pic16f877a.h: 176: unsigned RA2 :1;
+[; ;pic16f877a.h: 177: unsigned RA3 :1;
+[; ;pic16f877a.h: 178: unsigned RA4 :1;
+[; ;pic16f877a.h: 179: unsigned RA5 :1;
+[; ;pic16f877a.h: 180: };
+[; ;pic16f877a.h: 181: } PORTAbits_t;
+[; ;pic16f877a.h: 182: extern volatile PORTAbits_t PORTAbits __at(0x005);
+[; ;pic16f877a.h: 217: extern volatile unsigned char PORTB __at(0x006);
+"219
+[; ;pic16f877a.h: 219: asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+[; ;pic16f877a.h: 222: typedef union {
+[; ;pic16f877a.h: 223: struct {
+[; ;pic16f877a.h: 224: unsigned RB0 :1;
+[; ;pic16f877a.h: 225: unsigned RB1 :1;
+[; ;pic16f877a.h: 226: unsigned RB2 :1;
+[; ;pic16f877a.h: 227: unsigned RB3 :1;
+[; ;pic16f877a.h: 228: unsigned RB4 :1;
+[; ;pic16f877a.h: 229: unsigned RB5 :1;
+[; ;pic16f877a.h: 230: unsigned RB6 :1;
+[; ;pic16f877a.h: 231: unsigned RB7 :1;
+[; ;pic16f877a.h: 232: };
+[; ;pic16f877a.h: 233: } PORTBbits_t;
+[; ;pic16f877a.h: 234: extern volatile PORTBbits_t PORTBbits __at(0x006);
+[; ;pic16f877a.h: 279: extern volatile unsigned char PORTC __at(0x007);
+"281
+[; ;pic16f877a.h: 281: asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+[; ;pic16f877a.h: 284: typedef union {
+[; ;pic16f877a.h: 285: struct {
+[; ;pic16f877a.h: 286: unsigned RC0 :1;
+[; ;pic16f877a.h: 287: unsigned RC1 :1;
+[; ;pic16f877a.h: 288: unsigned RC2 :1;
+[; ;pic16f877a.h: 289: unsigned RC3 :1;
+[; ;pic16f877a.h: 290: unsigned RC4 :1;
+[; ;pic16f877a.h: 291: unsigned RC5 :1;
+[; ;pic16f877a.h: 292: unsigned RC6 :1;
+[; ;pic16f877a.h: 293: unsigned RC7 :1;
+[; ;pic16f877a.h: 294: };
+[; ;pic16f877a.h: 295: } PORTCbits_t;
+[; ;pic16f877a.h: 296: extern volatile PORTCbits_t PORTCbits __at(0x007);
+[; ;pic16f877a.h: 341: extern volatile unsigned char PORTD __at(0x008);
+"343
+[; ;pic16f877a.h: 343: asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+[; ;pic16f877a.h: 346: typedef union {
+[; ;pic16f877a.h: 347: struct {
+[; ;pic16f877a.h: 348: unsigned RD0 :1;
+[; ;pic16f877a.h: 349: unsigned RD1 :1;
+[; ;pic16f877a.h: 350: unsigned RD2 :1;
+[; ;pic16f877a.h: 351: unsigned RD3 :1;
+[; ;pic16f877a.h: 352: unsigned RD4 :1;
+[; ;pic16f877a.h: 353: unsigned RD5 :1;
+[; ;pic16f877a.h: 354: unsigned RD6 :1;
+[; ;pic16f877a.h: 355: unsigned RD7 :1;
+[; ;pic16f877a.h: 356: };
+[; ;pic16f877a.h: 357: } PORTDbits_t;
+[; ;pic16f877a.h: 358: extern volatile PORTDbits_t PORTDbits __at(0x008);
+[; ;pic16f877a.h: 403: extern volatile unsigned char PORTE __at(0x009);
+"405
+[; ;pic16f877a.h: 405: asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+[; ;pic16f877a.h: 408: typedef union {
+[; ;pic16f877a.h: 409: struct {
+[; ;pic16f877a.h: 410: unsigned RE0 :1;
+[; ;pic16f877a.h: 411: unsigned RE1 :1;
+[; ;pic16f877a.h: 412: unsigned RE2 :1;
+[; ;pic16f877a.h: 413: };
+[; ;pic16f877a.h: 414: } PORTEbits_t;
+[; ;pic16f877a.h: 415: extern volatile PORTEbits_t PORTEbits __at(0x009);
+[; ;pic16f877a.h: 435: extern volatile unsigned char PCLATH __at(0x00A);
+"437
+[; ;pic16f877a.h: 437: asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+[; ;pic16f877a.h: 440: typedef union {
+[; ;pic16f877a.h: 441: struct {
+[; ;pic16f877a.h: 442: unsigned PCLATH :5;
+[; ;pic16f877a.h: 443: };
+[; ;pic16f877a.h: 444: } PCLATHbits_t;
+[; ;pic16f877a.h: 445: extern volatile PCLATHbits_t PCLATHbits __at(0x00A);
+[; ;pic16f877a.h: 455: extern volatile unsigned char INTCON __at(0x00B);
+"457
+[; ;pic16f877a.h: 457: asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+[; ;pic16f877a.h: 460: typedef union {
+[; ;pic16f877a.h: 461: struct {
+[; ;pic16f877a.h: 462: unsigned RBIF :1;
+[; ;pic16f877a.h: 463: unsigned INTF :1;
+[; ;pic16f877a.h: 464: unsigned TMR0IF :1;
+[; ;pic16f877a.h: 465: unsigned RBIE :1;
+[; ;pic16f877a.h: 466: unsigned INTE :1;
+[; ;pic16f877a.h: 467: unsigned TMR0IE :1;
+[; ;pic16f877a.h: 468: unsigned PEIE :1;
+[; ;pic16f877a.h: 469: unsigned GIE :1;
+[; ;pic16f877a.h: 470: };
+[; ;pic16f877a.h: 471: struct {
+[; ;pic16f877a.h: 472: unsigned :2;
+[; ;pic16f877a.h: 473: unsigned T0IF :1;
+[; ;pic16f877a.h: 474: unsigned :2;
+[; ;pic16f877a.h: 475: unsigned T0IE :1;
+[; ;pic16f877a.h: 476: };
+[; ;pic16f877a.h: 477: } INTCONbits_t;
+[; ;pic16f877a.h: 478: extern volatile INTCONbits_t INTCONbits __at(0x00B);
+[; ;pic16f877a.h: 533: extern volatile unsigned char PIR1 __at(0x00C);
+"535
+[; ;pic16f877a.h: 535: asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+[; ;pic16f877a.h: 538: typedef union {
+[; ;pic16f877a.h: 539: struct {
+[; ;pic16f877a.h: 540: unsigned TMR1IF :1;
+[; ;pic16f877a.h: 541: unsigned TMR2IF :1;
+[; ;pic16f877a.h: 542: unsigned CCP1IF :1;
+[; ;pic16f877a.h: 543: unsigned SSPIF :1;
+[; ;pic16f877a.h: 544: unsigned TXIF :1;
+[; ;pic16f877a.h: 545: unsigned RCIF :1;
+[; ;pic16f877a.h: 546: unsigned ADIF :1;
+[; ;pic16f877a.h: 547: unsigned PSPIF :1;
+[; ;pic16f877a.h: 548: };
+[; ;pic16f877a.h: 549: } PIR1bits_t;
+[; ;pic16f877a.h: 550: extern volatile PIR1bits_t PIR1bits __at(0x00C);
+[; ;pic16f877a.h: 595: extern volatile unsigned char PIR2 __at(0x00D);
+"597
+[; ;pic16f877a.h: 597: asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+[; ;pic16f877a.h: 600: typedef union {
+[; ;pic16f877a.h: 601: struct {
+[; ;pic16f877a.h: 602: unsigned CCP2IF :1;
+[; ;pic16f877a.h: 603: unsigned :2;
+[; ;pic16f877a.h: 604: unsigned BCLIF :1;
+[; ;pic16f877a.h: 605: unsigned EEIF :1;
+[; ;pic16f877a.h: 606: unsigned :1;
+[; ;pic16f877a.h: 607: unsigned CMIF :1;
+[; ;pic16f877a.h: 608: };
+[; ;pic16f877a.h: 609: } PIR2bits_t;
+[; ;pic16f877a.h: 610: extern volatile PIR2bits_t PIR2bits __at(0x00D);
+[; ;pic16f877a.h: 635: extern volatile unsigned short TMR1 __at(0x00E);
+"637
+[; ;pic16f877a.h: 637: asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+[; ;pic16f877a.h: 642: extern volatile unsigned char TMR1L __at(0x00E);
+"644
+[; ;pic16f877a.h: 644: asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+[; ;pic16f877a.h: 649: extern volatile unsigned char TMR1H __at(0x00F);
+"651
+[; ;pic16f877a.h: 651: asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+[; ;pic16f877a.h: 656: extern volatile unsigned char T1CON __at(0x010);
+"658
+[; ;pic16f877a.h: 658: asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+[; ;pic16f877a.h: 661: typedef union {
+[; ;pic16f877a.h: 662: struct {
+[; ;pic16f877a.h: 663: unsigned TMR1ON :1;
+[; ;pic16f877a.h: 664: unsigned TMR1CS :1;
+[; ;pic16f877a.h: 665: unsigned nT1SYNC :1;
+[; ;pic16f877a.h: 666: unsigned T1OSCEN :1;
+[; ;pic16f877a.h: 667: unsigned T1CKPS :2;
+[; ;pic16f877a.h: 668: };
+[; ;pic16f877a.h: 669: struct {
+[; ;pic16f877a.h: 670: unsigned :2;
+[; ;pic16f877a.h: 671: unsigned T1SYNC :1;
+[; ;pic16f877a.h: 672: unsigned :1;
+[; ;pic16f877a.h: 673: unsigned T1CKPS0 :1;
+[; ;pic16f877a.h: 674: unsigned T1CKPS1 :1;
+[; ;pic16f877a.h: 675: };
+[; ;pic16f877a.h: 676: struct {
+[; ;pic16f877a.h: 677: unsigned :2;
+[; ;pic16f877a.h: 678: unsigned T1INSYNC :1;
+[; ;pic16f877a.h: 679: };
+[; ;pic16f877a.h: 680: } T1CONbits_t;
+[; ;pic16f877a.h: 681: extern volatile T1CONbits_t T1CONbits __at(0x010);
+[; ;pic16f877a.h: 731: extern volatile unsigned char TMR2 __at(0x011);
+"733
+[; ;pic16f877a.h: 733: asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+[; ;pic16f877a.h: 738: extern volatile unsigned char T2CON __at(0x012);
+"740
+[; ;pic16f877a.h: 740: asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+[; ;pic16f877a.h: 743: typedef union {
+[; ;pic16f877a.h: 744: struct {
+[; ;pic16f877a.h: 745: unsigned T2CKPS :2;
+[; ;pic16f877a.h: 746: unsigned TMR2ON :1;
+[; ;pic16f877a.h: 747: unsigned TOUTPS :4;
+[; ;pic16f877a.h: 748: };
+[; ;pic16f877a.h: 749: struct {
+[; ;pic16f877a.h: 750: unsigned T2CKPS0 :1;
+[; ;pic16f877a.h: 751: unsigned T2CKPS1 :1;
+[; ;pic16f877a.h: 752: unsigned :1;
+[; ;pic16f877a.h: 753: unsigned TOUTPS0 :1;
+[; ;pic16f877a.h: 754: unsigned TOUTPS1 :1;
+[; ;pic16f877a.h: 755: unsigned TOUTPS2 :1;
+[; ;pic16f877a.h: 756: unsigned TOUTPS3 :1;
+[; ;pic16f877a.h: 757: };
+[; ;pic16f877a.h: 758: } T2CONbits_t;
+[; ;pic16f877a.h: 759: extern volatile T2CONbits_t T2CONbits __at(0x012);
+[; ;pic16f877a.h: 809: extern volatile unsigned char SSPBUF __at(0x013);
+"811
+[; ;pic16f877a.h: 811: asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+[; ;pic16f877a.h: 816: extern volatile unsigned char SSPCON __at(0x014);
+"818
+[; ;pic16f877a.h: 818: asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+[; ;pic16f877a.h: 821: typedef union {
+[; ;pic16f877a.h: 822: struct {
+[; ;pic16f877a.h: 823: unsigned SSPM :4;
+[; ;pic16f877a.h: 824: unsigned CKP :1;
+[; ;pic16f877a.h: 825: unsigned SSPEN :1;
+[; ;pic16f877a.h: 826: unsigned SSPOV :1;
+[; ;pic16f877a.h: 827: unsigned WCOL :1;
+[; ;pic16f877a.h: 828: };
+[; ;pic16f877a.h: 829: struct {
+[; ;pic16f877a.h: 830: unsigned SSPM0 :1;
+[; ;pic16f877a.h: 831: unsigned SSPM1 :1;
+[; ;pic16f877a.h: 832: unsigned SSPM2 :1;
+[; ;pic16f877a.h: 833: unsigned SSPM3 :1;
+[; ;pic16f877a.h: 834: };
+[; ;pic16f877a.h: 835: } SSPCONbits_t;
+[; ;pic16f877a.h: 836: extern volatile SSPCONbits_t SSPCONbits __at(0x014);
+[; ;pic16f877a.h: 886: extern volatile unsigned short CCPR1 __at(0x015);
+"888
+[; ;pic16f877a.h: 888: asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+[; ;pic16f877a.h: 893: extern volatile unsigned char CCPR1L __at(0x015);
+"895
+[; ;pic16f877a.h: 895: asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+[; ;pic16f877a.h: 900: extern volatile unsigned char CCPR1H __at(0x016);
+"902
+[; ;pic16f877a.h: 902: asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+[; ;pic16f877a.h: 907: extern volatile unsigned char CCP1CON __at(0x017);
+"909
+[; ;pic16f877a.h: 909: asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+[; ;pic16f877a.h: 912: typedef union {
+[; ;pic16f877a.h: 913: struct {
+[; ;pic16f877a.h: 914: unsigned CCP1M :4;
+[; ;pic16f877a.h: 915: unsigned CCP1Y :1;
+[; ;pic16f877a.h: 916: unsigned CCP1X :1;
+[; ;pic16f877a.h: 917: };
+[; ;pic16f877a.h: 918: struct {
+[; ;pic16f877a.h: 919: unsigned CCP1M0 :1;
+[; ;pic16f877a.h: 920: unsigned CCP1M1 :1;
+[; ;pic16f877a.h: 921: unsigned CCP1M2 :1;
+[; ;pic16f877a.h: 922: unsigned CCP1M3 :1;
+[; ;pic16f877a.h: 923: };
+[; ;pic16f877a.h: 924: } CCP1CONbits_t;
+[; ;pic16f877a.h: 925: extern volatile CCP1CONbits_t CCP1CONbits __at(0x017);
+[; ;pic16f877a.h: 965: extern volatile unsigned char RCSTA __at(0x018);
+"967
+[; ;pic16f877a.h: 967: asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+[; ;pic16f877a.h: 970: typedef union {
+[; ;pic16f877a.h: 971: struct {
+[; ;pic16f877a.h: 972: unsigned RX9D :1;
+[; ;pic16f877a.h: 973: unsigned OERR :1;
+[; ;pic16f877a.h: 974: unsigned FERR :1;
+[; ;pic16f877a.h: 975: unsigned ADDEN :1;
+[; ;pic16f877a.h: 976: unsigned CREN :1;
+[; ;pic16f877a.h: 977: unsigned SREN :1;
+[; ;pic16f877a.h: 978: unsigned RX9 :1;
+[; ;pic16f877a.h: 979: unsigned SPEN :1;
+[; ;pic16f877a.h: 980: };
+[; ;pic16f877a.h: 981: struct {
+[; ;pic16f877a.h: 982: unsigned RCD8 :1;
+[; ;pic16f877a.h: 983: unsigned :5;
+[; ;pic16f877a.h: 984: unsigned RC9 :1;
+[; ;pic16f877a.h: 985: };
+[; ;pic16f877a.h: 986: struct {
+[; ;pic16f877a.h: 987: unsigned :6;
+[; ;pic16f877a.h: 988: unsigned nRC8 :1;
+[; ;pic16f877a.h: 989: };
+[; ;pic16f877a.h: 990: struct {
+[; ;pic16f877a.h: 991: unsigned :6;
+[; ;pic16f877a.h: 992: unsigned RC8_9 :1;
+[; ;pic16f877a.h: 993: };
+[; ;pic16f877a.h: 994: } RCSTAbits_t;
+[; ;pic16f877a.h: 995: extern volatile RCSTAbits_t RCSTAbits __at(0x018);
+[; ;pic16f877a.h: 1060: extern volatile unsigned char TXREG __at(0x019);
+"1062
+[; ;pic16f877a.h: 1062: asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+[; ;pic16f877a.h: 1067: extern volatile unsigned char RCREG __at(0x01A);
+"1069
+[; ;pic16f877a.h: 1069: asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+[; ;pic16f877a.h: 1074: extern volatile unsigned short CCPR2 __at(0x01B);
+"1076
+[; ;pic16f877a.h: 1076: asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+[; ;pic16f877a.h: 1081: extern volatile unsigned char CCPR2L __at(0x01B);
+"1083
+[; ;pic16f877a.h: 1083: asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+[; ;pic16f877a.h: 1088: extern volatile unsigned char CCPR2H __at(0x01C);
+"1090
+[; ;pic16f877a.h: 1090: asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+[; ;pic16f877a.h: 1095: extern volatile unsigned char CCP2CON __at(0x01D);
+"1097
+[; ;pic16f877a.h: 1097: asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+[; ;pic16f877a.h: 1100: typedef union {
+[; ;pic16f877a.h: 1101: struct {
+[; ;pic16f877a.h: 1102: unsigned CCP2M :4;
+[; ;pic16f877a.h: 1103: unsigned CCP2Y :1;
+[; ;pic16f877a.h: 1104: unsigned CCP2X :1;
+[; ;pic16f877a.h: 1105: };
+[; ;pic16f877a.h: 1106: struct {
+[; ;pic16f877a.h: 1107: unsigned CCP2M0 :1;
+[; ;pic16f877a.h: 1108: unsigned CCP2M1 :1;
+[; ;pic16f877a.h: 1109: unsigned CCP2M2 :1;
+[; ;pic16f877a.h: 1110: unsigned CCP2M3 :1;
+[; ;pic16f877a.h: 1111: };
+[; ;pic16f877a.h: 1112: } CCP2CONbits_t;
+[; ;pic16f877a.h: 1113: extern volatile CCP2CONbits_t CCP2CONbits __at(0x01D);
+[; ;pic16f877a.h: 1153: extern volatile unsigned char ADRESH __at(0x01E);
+"1155
+[; ;pic16f877a.h: 1155: asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+[; ;pic16f877a.h: 1160: extern volatile unsigned char ADCON0 __at(0x01F);
+"1162
+[; ;pic16f877a.h: 1162: asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+[; ;pic16f877a.h: 1165: typedef union {
+[; ;pic16f877a.h: 1166: struct {
+[; ;pic16f877a.h: 1167: unsigned ADON :1;
+[; ;pic16f877a.h: 1168: unsigned :1;
+[; ;pic16f877a.h: 1169: unsigned GO_nDONE :1;
+[; ;pic16f877a.h: 1170: unsigned CHS :3;
+[; ;pic16f877a.h: 1171: unsigned ADCS :2;
+[; ;pic16f877a.h: 1172: };
+[; ;pic16f877a.h: 1173: struct {
+[; ;pic16f877a.h: 1174: unsigned :2;
+[; ;pic16f877a.h: 1175: unsigned GO :1;
+[; ;pic16f877a.h: 1176: unsigned CHS0 :1;
+[; ;pic16f877a.h: 1177: unsigned CHS1 :1;
+[; ;pic16f877a.h: 1178: unsigned CHS2 :1;
+[; ;pic16f877a.h: 1179: unsigned ADCS0 :1;
+[; ;pic16f877a.h: 1180: unsigned ADCS1 :1;
+[; ;pic16f877a.h: 1181: };
+[; ;pic16f877a.h: 1182: struct {
+[; ;pic16f877a.h: 1183: unsigned :2;
+[; ;pic16f877a.h: 1184: unsigned nDONE :1;
+[; ;pic16f877a.h: 1185: };
+[; ;pic16f877a.h: 1186: struct {
+[; ;pic16f877a.h: 1187: unsigned :2;
+[; ;pic16f877a.h: 1188: unsigned GO_DONE :1;
+[; ;pic16f877a.h: 1189: };
+[; ;pic16f877a.h: 1190: } ADCON0bits_t;
+[; ;pic16f877a.h: 1191: extern volatile ADCON0bits_t ADCON0bits __at(0x01F);
+[; ;pic16f877a.h: 1256: extern volatile unsigned char OPTION_REG __at(0x081);
+"1258
+[; ;pic16f877a.h: 1258: asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+[; ;pic16f877a.h: 1261: typedef union {
+[; ;pic16f877a.h: 1262: struct {
+[; ;pic16f877a.h: 1263: unsigned PS :3;
+[; ;pic16f877a.h: 1264: unsigned PSA :1;
+[; ;pic16f877a.h: 1265: unsigned T0SE :1;
+[; ;pic16f877a.h: 1266: unsigned T0CS :1;
+[; ;pic16f877a.h: 1267: unsigned INTEDG :1;
+[; ;pic16f877a.h: 1268: unsigned nRBPU :1;
+[; ;pic16f877a.h: 1269: };
+[; ;pic16f877a.h: 1270: struct {
+[; ;pic16f877a.h: 1271: unsigned PS0 :1;
+[; ;pic16f877a.h: 1272: unsigned PS1 :1;
+[; ;pic16f877a.h: 1273: unsigned PS2 :1;
+[; ;pic16f877a.h: 1274: };
+[; ;pic16f877a.h: 1275: } OPTION_REGbits_t;
+[; ;pic16f877a.h: 1276: extern volatile OPTION_REGbits_t OPTION_REGbits __at(0x081);
+[; ;pic16f877a.h: 1326: extern volatile unsigned char TRISA __at(0x085);
+"1328
+[; ;pic16f877a.h: 1328: asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+[; ;pic16f877a.h: 1331: typedef union {
+[; ;pic16f877a.h: 1332: struct {
+[; ;pic16f877a.h: 1333: unsigned TRISA0 :1;
+[; ;pic16f877a.h: 1334: unsigned TRISA1 :1;
+[; ;pic16f877a.h: 1335: unsigned TRISA2 :1;
+[; ;pic16f877a.h: 1336: unsigned TRISA3 :1;
+[; ;pic16f877a.h: 1337: unsigned TRISA4 :1;
+[; ;pic16f877a.h: 1338: unsigned TRISA5 :1;
+[; ;pic16f877a.h: 1339: };
+[; ;pic16f877a.h: 1340: } TRISAbits_t;
+[; ;pic16f877a.h: 1341: extern volatile TRISAbits_t TRISAbits __at(0x085);
+[; ;pic16f877a.h: 1376: extern volatile unsigned char TRISB __at(0x086);
+"1378
+[; ;pic16f877a.h: 1378: asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+[; ;pic16f877a.h: 1381: typedef union {
+[; ;pic16f877a.h: 1382: struct {
+[; ;pic16f877a.h: 1383: unsigned TRISB0 :1;
+[; ;pic16f877a.h: 1384: unsigned TRISB1 :1;
+[; ;pic16f877a.h: 1385: unsigned TRISB2 :1;
+[; ;pic16f877a.h: 1386: unsigned TRISB3 :1;
+[; ;pic16f877a.h: 1387: unsigned TRISB4 :1;
+[; ;pic16f877a.h: 1388: unsigned TRISB5 :1;
+[; ;pic16f877a.h: 1389: unsigned TRISB6 :1;
+[; ;pic16f877a.h: 1390: unsigned TRISB7 :1;
+[; ;pic16f877a.h: 1391: };
+[; ;pic16f877a.h: 1392: } TRISBbits_t;
+[; ;pic16f877a.h: 1393: extern volatile TRISBbits_t TRISBbits __at(0x086);
+[; ;pic16f877a.h: 1438: extern volatile unsigned char TRISC __at(0x087);
+"1440
+[; ;pic16f877a.h: 1440: asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+[; ;pic16f877a.h: 1443: typedef union {
+[; ;pic16f877a.h: 1444: struct {
+[; ;pic16f877a.h: 1445: unsigned TRISC0 :1;
+[; ;pic16f877a.h: 1446: unsigned TRISC1 :1;
+[; ;pic16f877a.h: 1447: unsigned TRISC2 :1;
+[; ;pic16f877a.h: 1448: unsigned TRISC3 :1;
+[; ;pic16f877a.h: 1449: unsigned TRISC4 :1;
+[; ;pic16f877a.h: 1450: unsigned TRISC5 :1;
+[; ;pic16f877a.h: 1451: unsigned TRISC6 :1;
+[; ;pic16f877a.h: 1452: unsigned TRISC7 :1;
+[; ;pic16f877a.h: 1453: };
+[; ;pic16f877a.h: 1454: } TRISCbits_t;
+[; ;pic16f877a.h: 1455: extern volatile TRISCbits_t TRISCbits __at(0x087);
+[; ;pic16f877a.h: 1500: extern volatile unsigned char TRISD __at(0x088);
+"1502
+[; ;pic16f877a.h: 1502: asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+[; ;pic16f877a.h: 1505: typedef union {
+[; ;pic16f877a.h: 1506: struct {
+[; ;pic16f877a.h: 1507: unsigned TRISD0 :1;
+[; ;pic16f877a.h: 1508: unsigned TRISD1 :1;
+[; ;pic16f877a.h: 1509: unsigned TRISD2 :1;
+[; ;pic16f877a.h: 1510: unsigned TRISD3 :1;
+[; ;pic16f877a.h: 1511: unsigned TRISD4 :1;
+[; ;pic16f877a.h: 1512: unsigned TRISD5 :1;
+[; ;pic16f877a.h: 1513: unsigned TRISD6 :1;
+[; ;pic16f877a.h: 1514: unsigned TRISD7 :1;
+[; ;pic16f877a.h: 1515: };
+[; ;pic16f877a.h: 1516: } TRISDbits_t;
+[; ;pic16f877a.h: 1517: extern volatile TRISDbits_t TRISDbits __at(0x088);
+[; ;pic16f877a.h: 1562: extern volatile unsigned char TRISE __at(0x089);
+"1564
+[; ;pic16f877a.h: 1564: asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+[; ;pic16f877a.h: 1567: typedef union {
+[; ;pic16f877a.h: 1568: struct {
+[; ;pic16f877a.h: 1569: unsigned TRISE0 :1;
+[; ;pic16f877a.h: 1570: unsigned TRISE1 :1;
+[; ;pic16f877a.h: 1571: unsigned TRISE2 :1;
+[; ;pic16f877a.h: 1572: unsigned :1;
+[; ;pic16f877a.h: 1573: unsigned PSPMODE :1;
+[; ;pic16f877a.h: 1574: unsigned IBOV :1;
+[; ;pic16f877a.h: 1575: unsigned OBF :1;
+[; ;pic16f877a.h: 1576: unsigned IBF :1;
+[; ;pic16f877a.h: 1577: };
+[; ;pic16f877a.h: 1578: } TRISEbits_t;
+[; ;pic16f877a.h: 1579: extern volatile TRISEbits_t TRISEbits __at(0x089);
+[; ;pic16f877a.h: 1619: extern volatile unsigned char PIE1 __at(0x08C);
+"1621
+[; ;pic16f877a.h: 1621: asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+[; ;pic16f877a.h: 1624: typedef union {
+[; ;pic16f877a.h: 1625: struct {
+[; ;pic16f877a.h: 1626: unsigned TMR1IE :1;
+[; ;pic16f877a.h: 1627: unsigned TMR2IE :1;
+[; ;pic16f877a.h: 1628: unsigned CCP1IE :1;
+[; ;pic16f877a.h: 1629: unsigned SSPIE :1;
+[; ;pic16f877a.h: 1630: unsigned TXIE :1;
+[; ;pic16f877a.h: 1631: unsigned RCIE :1;
+[; ;pic16f877a.h: 1632: unsigned ADIE :1;
+[; ;pic16f877a.h: 1633: unsigned PSPIE :1;
+[; ;pic16f877a.h: 1634: };
+[; ;pic16f877a.h: 1635: } PIE1bits_t;
+[; ;pic16f877a.h: 1636: extern volatile PIE1bits_t PIE1bits __at(0x08C);
+[; ;pic16f877a.h: 1681: extern volatile unsigned char PIE2 __at(0x08D);
+"1683
+[; ;pic16f877a.h: 1683: asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+[; ;pic16f877a.h: 1686: typedef union {
+[; ;pic16f877a.h: 1687: struct {
+[; ;pic16f877a.h: 1688: unsigned CCP2IE :1;
+[; ;pic16f877a.h: 1689: unsigned :2;
+[; ;pic16f877a.h: 1690: unsigned BCLIE :1;
+[; ;pic16f877a.h: 1691: unsigned EEIE :1;
+[; ;pic16f877a.h: 1692: unsigned :1;
+[; ;pic16f877a.h: 1693: unsigned CMIE :1;
+[; ;pic16f877a.h: 1694: };
+[; ;pic16f877a.h: 1695: } PIE2bits_t;
+[; ;pic16f877a.h: 1696: extern volatile PIE2bits_t PIE2bits __at(0x08D);
+[; ;pic16f877a.h: 1721: extern volatile unsigned char PCON __at(0x08E);
+"1723
+[; ;pic16f877a.h: 1723: asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+[; ;pic16f877a.h: 1726: typedef union {
+[; ;pic16f877a.h: 1727: struct {
+[; ;pic16f877a.h: 1728: unsigned nBOR :1;
+[; ;pic16f877a.h: 1729: unsigned nPOR :1;
+[; ;pic16f877a.h: 1730: };
+[; ;pic16f877a.h: 1731: struct {
+[; ;pic16f877a.h: 1732: unsigned nBO :1;
+[; ;pic16f877a.h: 1733: };
+[; ;pic16f877a.h: 1734: } PCONbits_t;
+[; ;pic16f877a.h: 1735: extern volatile PCONbits_t PCONbits __at(0x08E);
+[; ;pic16f877a.h: 1755: extern volatile unsigned char SSPCON2 __at(0x091);
+"1757
+[; ;pic16f877a.h: 1757: asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+[; ;pic16f877a.h: 1760: typedef union {
+[; ;pic16f877a.h: 1761: struct {
+[; ;pic16f877a.h: 1762: unsigned SEN :1;
+[; ;pic16f877a.h: 1763: unsigned RSEN :1;
+[; ;pic16f877a.h: 1764: unsigned PEN :1;
+[; ;pic16f877a.h: 1765: unsigned RCEN :1;
+[; ;pic16f877a.h: 1766: unsigned ACKEN :1;
+[; ;pic16f877a.h: 1767: unsigned ACKDT :1;
+[; ;pic16f877a.h: 1768: unsigned ACKSTAT :1;
+[; ;pic16f877a.h: 1769: unsigned GCEN :1;
+[; ;pic16f877a.h: 1770: };
+[; ;pic16f877a.h: 1771: } SSPCON2bits_t;
+[; ;pic16f877a.h: 1772: extern volatile SSPCON2bits_t SSPCON2bits __at(0x091);
+[; ;pic16f877a.h: 1817: extern volatile unsigned char PR2 __at(0x092);
+"1819
+[; ;pic16f877a.h: 1819: asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+[; ;pic16f877a.h: 1824: extern volatile unsigned char SSPADD __at(0x093);
+"1826
+[; ;pic16f877a.h: 1826: asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+[; ;pic16f877a.h: 1831: extern volatile unsigned char SSPSTAT __at(0x094);
+"1833
+[; ;pic16f877a.h: 1833: asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+[; ;pic16f877a.h: 1836: typedef union {
+[; ;pic16f877a.h: 1837: struct {
+[; ;pic16f877a.h: 1838: unsigned BF :1;
+[; ;pic16f877a.h: 1839: unsigned UA :1;
+[; ;pic16f877a.h: 1840: unsigned R_nW :1;
+[; ;pic16f877a.h: 1841: unsigned S :1;
+[; ;pic16f877a.h: 1842: unsigned P :1;
+[; ;pic16f877a.h: 1843: unsigned D_nA :1;
+[; ;pic16f877a.h: 1844: unsigned CKE :1;
+[; ;pic16f877a.h: 1845: unsigned SMP :1;
+[; ;pic16f877a.h: 1846: };
+[; ;pic16f877a.h: 1847: struct {
+[; ;pic16f877a.h: 1848: unsigned :2;
+[; ;pic16f877a.h: 1849: unsigned R :1;
+[; ;pic16f877a.h: 1850: unsigned :2;
+[; ;pic16f877a.h: 1851: unsigned D :1;
+[; ;pic16f877a.h: 1852: };
+[; ;pic16f877a.h: 1853: struct {
+[; ;pic16f877a.h: 1854: unsigned :2;
+[; ;pic16f877a.h: 1855: unsigned I2C_READ :1;
+[; ;pic16f877a.h: 1856: unsigned I2C_START :1;
+[; ;pic16f877a.h: 1857: unsigned I2C_STOP :1;
+[; ;pic16f877a.h: 1858: unsigned I2C_DATA :1;
+[; ;pic16f877a.h: 1859: };
+[; ;pic16f877a.h: 1860: struct {
+[; ;pic16f877a.h: 1861: unsigned :2;
+[; ;pic16f877a.h: 1862: unsigned nW :1;
+[; ;pic16f877a.h: 1863: unsigned :2;
+[; ;pic16f877a.h: 1864: unsigned nA :1;
+[; ;pic16f877a.h: 1865: };
+[; ;pic16f877a.h: 1866: struct {
+[; ;pic16f877a.h: 1867: unsigned :2;
+[; ;pic16f877a.h: 1868: unsigned nWRITE :1;
+[; ;pic16f877a.h: 1869: unsigned :2;
+[; ;pic16f877a.h: 1870: unsigned nADDRESS :1;
+[; ;pic16f877a.h: 1871: };
+[; ;pic16f877a.h: 1872: struct {
+[; ;pic16f877a.h: 1873: unsigned :2;
+[; ;pic16f877a.h: 1874: unsigned R_W :1;
+[; ;pic16f877a.h: 1875: unsigned :2;
+[; ;pic16f877a.h: 1876: unsigned D_A :1;
+[; ;pic16f877a.h: 1877: };
+[; ;pic16f877a.h: 1878: struct {
+[; ;pic16f877a.h: 1879: unsigned :2;
+[; ;pic16f877a.h: 1880: unsigned READ_WRITE :1;
+[; ;pic16f877a.h: 1881: unsigned :2;
+[; ;pic16f877a.h: 1882: unsigned DATA_ADDRESS :1;
+[; ;pic16f877a.h: 1883: };
+[; ;pic16f877a.h: 1884: } SSPSTATbits_t;
+[; ;pic16f877a.h: 1885: extern volatile SSPSTATbits_t SSPSTATbits __at(0x094);
+[; ;pic16f877a.h: 2000: extern volatile unsigned char TXSTA __at(0x098);
+"2002
+[; ;pic16f877a.h: 2002: asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+[; ;pic16f877a.h: 2005: typedef union {
+[; ;pic16f877a.h: 2006: struct {
+[; ;pic16f877a.h: 2007: unsigned TX9D :1;
+[; ;pic16f877a.h: 2008: unsigned TRMT :1;
+[; ;pic16f877a.h: 2009: unsigned BRGH :1;
+[; ;pic16f877a.h: 2010: unsigned :1;
+[; ;pic16f877a.h: 2011: unsigned SYNC :1;
+[; ;pic16f877a.h: 2012: unsigned TXEN :1;
+[; ;pic16f877a.h: 2013: unsigned TX9 :1;
+[; ;pic16f877a.h: 2014: unsigned CSRC :1;
+[; ;pic16f877a.h: 2015: };
+[; ;pic16f877a.h: 2016: struct {
+[; ;pic16f877a.h: 2017: unsigned TXD8 :1;
+[; ;pic16f877a.h: 2018: unsigned :5;
+[; ;pic16f877a.h: 2019: unsigned nTX8 :1;
+[; ;pic16f877a.h: 2020: };
+[; ;pic16f877a.h: 2021: struct {
+[; ;pic16f877a.h: 2022: unsigned :6;
+[; ;pic16f877a.h: 2023: unsigned TX8_9 :1;
+[; ;pic16f877a.h: 2024: };
+[; ;pic16f877a.h: 2025: } TXSTAbits_t;
+[; ;pic16f877a.h: 2026: extern volatile TXSTAbits_t TXSTAbits __at(0x098);
+[; ;pic16f877a.h: 2081: extern volatile unsigned char SPBRG __at(0x099);
+"2083
+[; ;pic16f877a.h: 2083: asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+[; ;pic16f877a.h: 2088: extern volatile unsigned char CMCON __at(0x09C);
+"2090
+[; ;pic16f877a.h: 2090: asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+[; ;pic16f877a.h: 2093: typedef union {
+[; ;pic16f877a.h: 2094: struct {
+[; ;pic16f877a.h: 2095: unsigned CM :3;
+[; ;pic16f877a.h: 2096: unsigned CIS :1;
+[; ;pic16f877a.h: 2097: unsigned C1INV :1;
+[; ;pic16f877a.h: 2098: unsigned C2INV :1;
+[; ;pic16f877a.h: 2099: unsigned C1OUT :1;
+[; ;pic16f877a.h: 2100: unsigned C2OUT :1;
+[; ;pic16f877a.h: 2101: };
+[; ;pic16f877a.h: 2102: struct {
+[; ;pic16f877a.h: 2103: unsigned CM0 :1;
+[; ;pic16f877a.h: 2104: unsigned CM1 :1;
+[; ;pic16f877a.h: 2105: unsigned CM2 :1;
+[; ;pic16f877a.h: 2106: };
+[; ;pic16f877a.h: 2107: } CMCONbits_t;
+[; ;pic16f877a.h: 2108: extern volatile CMCONbits_t CMCONbits __at(0x09C);
+[; ;pic16f877a.h: 2158: extern volatile unsigned char CVRCON __at(0x09D);
+"2160
+[; ;pic16f877a.h: 2160: asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+[; ;pic16f877a.h: 2163: typedef union {
+[; ;pic16f877a.h: 2164: struct {
+[; ;pic16f877a.h: 2165: unsigned CVR :4;
+[; ;pic16f877a.h: 2166: unsigned :1;
+[; ;pic16f877a.h: 2167: unsigned CVRR :1;
+[; ;pic16f877a.h: 2168: unsigned CVROE :1;
+[; ;pic16f877a.h: 2169: unsigned CVREN :1;
+[; ;pic16f877a.h: 2170: };
+[; ;pic16f877a.h: 2171: struct {
+[; ;pic16f877a.h: 2172: unsigned CVR0 :1;
+[; ;pic16f877a.h: 2173: unsigned CVR1 :1;
+[; ;pic16f877a.h: 2174: unsigned CVR2 :1;
+[; ;pic16f877a.h: 2175: unsigned CVR3 :1;
+[; ;pic16f877a.h: 2176: };
+[; ;pic16f877a.h: 2177: } CVRCONbits_t;
+[; ;pic16f877a.h: 2178: extern volatile CVRCONbits_t CVRCONbits __at(0x09D);
+[; ;pic16f877a.h: 2223: extern volatile unsigned char ADRESL __at(0x09E);
+"2225
+[; ;pic16f877a.h: 2225: asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+[; ;pic16f877a.h: 2230: extern volatile unsigned char ADCON1 __at(0x09F);
+"2232
+[; ;pic16f877a.h: 2232: asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+[; ;pic16f877a.h: 2235: typedef union {
+[; ;pic16f877a.h: 2236: struct {
+[; ;pic16f877a.h: 2237: unsigned PCFG :4;
+[; ;pic16f877a.h: 2238: unsigned :2;
+[; ;pic16f877a.h: 2239: unsigned ADCS2 :1;
+[; ;pic16f877a.h: 2240: unsigned ADFM :1;
+[; ;pic16f877a.h: 2241: };
+[; ;pic16f877a.h: 2242: struct {
+[; ;pic16f877a.h: 2243: unsigned PCFG0 :1;
+[; ;pic16f877a.h: 2244: unsigned PCFG1 :1;
+[; ;pic16f877a.h: 2245: unsigned PCFG2 :1;
+[; ;pic16f877a.h: 2246: unsigned PCFG3 :1;
+[; ;pic16f877a.h: 2247: };
+[; ;pic16f877a.h: 2248: } ADCON1bits_t;
+[; ;pic16f877a.h: 2249: extern volatile ADCON1bits_t ADCON1bits __at(0x09F);
+[; ;pic16f877a.h: 2289: extern volatile unsigned char EEDATA __at(0x10C);
+"2291
+[; ;pic16f877a.h: 2291: asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+[; ;pic16f877a.h: 2296: extern volatile unsigned char EEADR __at(0x10D);
+"2298
+[; ;pic16f877a.h: 2298: asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+[; ;pic16f877a.h: 2303: extern volatile unsigned char EEDATH __at(0x10E);
+"2305
+[; ;pic16f877a.h: 2305: asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+[; ;pic16f877a.h: 2310: extern volatile unsigned char EEADRH __at(0x10F);
+"2312
+[; ;pic16f877a.h: 2312: asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+[; ;pic16f877a.h: 2317: extern volatile unsigned char EECON1 __at(0x18C);
+"2319
+[; ;pic16f877a.h: 2319: asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+[; ;pic16f877a.h: 2322: typedef union {
+[; ;pic16f877a.h: 2323: struct {
+[; ;pic16f877a.h: 2324: unsigned RD :1;
+[; ;pic16f877a.h: 2325: unsigned WR :1;
+[; ;pic16f877a.h: 2326: unsigned WREN :1;
+[; ;pic16f877a.h: 2327: unsigned WRERR :1;
+[; ;pic16f877a.h: 2328: unsigned :3;
+[; ;pic16f877a.h: 2329: unsigned EEPGD :1;
+[; ;pic16f877a.h: 2330: };
+[; ;pic16f877a.h: 2331: } EECON1bits_t;
+[; ;pic16f877a.h: 2332: extern volatile EECON1bits_t EECON1bits __at(0x18C);
+[; ;pic16f877a.h: 2362: extern volatile unsigned char EECON2 __at(0x18D);
+"2364
+[; ;pic16f877a.h: 2364: asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+[; ;pic16f877a.h: 2375: extern volatile __bit ACKDT __at(0x48D);
+[; ;pic16f877a.h: 2378: extern volatile __bit ACKEN __at(0x48C);
+[; ;pic16f877a.h: 2381: extern volatile __bit ACKSTAT __at(0x48E);
+[; ;pic16f877a.h: 2384: extern volatile __bit ADCS0 __at(0xFE);
+[; ;pic16f877a.h: 2387: extern volatile __bit ADCS1 __at(0xFF);
+[; ;pic16f877a.h: 2390: extern volatile __bit ADCS2 __at(0x4FE);
+[; ;pic16f877a.h: 2393: extern volatile __bit ADDEN __at(0xC3);
+[; ;pic16f877a.h: 2396: extern volatile __bit ADFM __at(0x4FF);
+[; ;pic16f877a.h: 2399: extern volatile __bit ADIE __at(0x466);
+[; ;pic16f877a.h: 2402: extern volatile __bit ADIF __at(0x66);
+[; ;pic16f877a.h: 2405: extern volatile __bit ADON __at(0xF8);
+[; ;pic16f877a.h: 2408: extern volatile __bit BCLIE __at(0x46B);
+[; ;pic16f877a.h: 2411: extern volatile __bit BCLIF __at(0x6B);
+[; ;pic16f877a.h: 2414: extern volatile __bit BF __at(0x4A0);
+[; ;pic16f877a.h: 2417: extern volatile __bit BRGH __at(0x4C2);
+[; ;pic16f877a.h: 2420: extern volatile __bit C1INV __at(0x4E4);
+[; ;pic16f877a.h: 2423: extern volatile __bit C1OUT __at(0x4E6);
+[; ;pic16f877a.h: 2426: extern volatile __bit C2INV __at(0x4E5);
+[; ;pic16f877a.h: 2429: extern volatile __bit C2OUT __at(0x4E7);
+[; ;pic16f877a.h: 2432: extern volatile __bit CARRY __at(0x18);
+[; ;pic16f877a.h: 2435: extern volatile __bit CCP1IE __at(0x462);
+[; ;pic16f877a.h: 2438: extern volatile __bit CCP1IF __at(0x62);
+[; ;pic16f877a.h: 2441: extern volatile __bit CCP1M0 __at(0xB8);
+[; ;pic16f877a.h: 2444: extern volatile __bit CCP1M1 __at(0xB9);
+[; ;pic16f877a.h: 2447: extern volatile __bit CCP1M2 __at(0xBA);
+[; ;pic16f877a.h: 2450: extern volatile __bit CCP1M3 __at(0xBB);
+[; ;pic16f877a.h: 2453: extern volatile __bit CCP1X __at(0xBD);
+[; ;pic16f877a.h: 2456: extern volatile __bit CCP1Y __at(0xBC);
+[; ;pic16f877a.h: 2459: extern volatile __bit CCP2IE __at(0x468);
+[; ;pic16f877a.h: 2462: extern volatile __bit CCP2IF __at(0x68);
+[; ;pic16f877a.h: 2465: extern volatile __bit CCP2M0 __at(0xE8);
+[; ;pic16f877a.h: 2468: extern volatile __bit CCP2M1 __at(0xE9);
+[; ;pic16f877a.h: 2471: extern volatile __bit CCP2M2 __at(0xEA);
+[; ;pic16f877a.h: 2474: extern volatile __bit CCP2M3 __at(0xEB);
+[; ;pic16f877a.h: 2477: extern volatile __bit CCP2X __at(0xED);
+[; ;pic16f877a.h: 2480: extern volatile __bit CCP2Y __at(0xEC);
+[; ;pic16f877a.h: 2483: extern volatile __bit CHS0 __at(0xFB);
+[; ;pic16f877a.h: 2486: extern volatile __bit CHS1 __at(0xFC);
+[; ;pic16f877a.h: 2489: extern volatile __bit CHS2 __at(0xFD);
+[; ;pic16f877a.h: 2492: extern volatile __bit CIS __at(0x4E3);
+[; ;pic16f877a.h: 2495: extern volatile __bit CKE __at(0x4A6);
+[; ;pic16f877a.h: 2498: extern volatile __bit CKP __at(0xA4);
+[; ;pic16f877a.h: 2501: extern volatile __bit CM0 __at(0x4E0);
+[; ;pic16f877a.h: 2504: extern volatile __bit CM1 __at(0x4E1);
+[; ;pic16f877a.h: 2507: extern volatile __bit CM2 __at(0x4E2);
+[; ;pic16f877a.h: 2510: extern volatile __bit CMIE __at(0x46E);
+[; ;pic16f877a.h: 2513: extern volatile __bit CMIF __at(0x6E);
+[; ;pic16f877a.h: 2516: extern volatile __bit CREN __at(0xC4);
+[; ;pic16f877a.h: 2519: extern volatile __bit CSRC __at(0x4C7);
+[; ;pic16f877a.h: 2522: extern volatile __bit CVR0 __at(0x4E8);
+[; ;pic16f877a.h: 2525: extern volatile __bit CVR1 __at(0x4E9);
+[; ;pic16f877a.h: 2528: extern volatile __bit CVR2 __at(0x4EA);
+[; ;pic16f877a.h: 2531: extern volatile __bit CVR3 __at(0x4EB);
+[; ;pic16f877a.h: 2534: extern volatile __bit CVREN __at(0x4EF);
+[; ;pic16f877a.h: 2537: extern volatile __bit CVROE __at(0x4EE);
+[; ;pic16f877a.h: 2540: extern volatile __bit CVRR __at(0x4ED);
+[; ;pic16f877a.h: 2543: extern volatile __bit DATA_ADDRESS __at(0x4A5);
+[; ;pic16f877a.h: 2546: extern volatile __bit DC __at(0x19);
+[; ;pic16f877a.h: 2549: extern volatile __bit D_A __at(0x4A5);
+[; ;pic16f877a.h: 2552: extern volatile __bit D_nA __at(0x4A5);
+[; ;pic16f877a.h: 2555: extern volatile __bit EEIE __at(0x46C);
+[; ;pic16f877a.h: 2558: extern volatile __bit EEIF __at(0x6C);
+[; ;pic16f877a.h: 2561: extern volatile __bit EEPGD __at(0xC67);
+[; ;pic16f877a.h: 2564: extern volatile __bit FERR __at(0xC2);
+[; ;pic16f877a.h: 2567: extern volatile __bit GCEN __at(0x48F);
+[; ;pic16f877a.h: 2570: extern volatile __bit GIE __at(0x5F);
+[; ;pic16f877a.h: 2573: extern volatile __bit GO __at(0xFA);
+[; ;pic16f877a.h: 2576: extern volatile __bit GO_DONE __at(0xFA);
+[; ;pic16f877a.h: 2579: extern volatile __bit GO_nDONE __at(0xFA);
+[; ;pic16f877a.h: 2582: extern volatile __bit I2C_DATA __at(0x4A5);
+[; ;pic16f877a.h: 2585: extern volatile __bit I2C_READ __at(0x4A2);
+[; ;pic16f877a.h: 2588: extern volatile __bit I2C_START __at(0x4A3);
+[; ;pic16f877a.h: 2591: extern volatile __bit I2C_STOP __at(0x4A4);
+[; ;pic16f877a.h: 2594: extern volatile __bit IBF __at(0x44F);
+[; ;pic16f877a.h: 2597: extern volatile __bit IBOV __at(0x44D);
+[; ;pic16f877a.h: 2600: extern volatile __bit INTE __at(0x5C);
+[; ;pic16f877a.h: 2603: extern volatile __bit INTEDG __at(0x40E);
+[; ;pic16f877a.h: 2606: extern volatile __bit INTF __at(0x59);
+[; ;pic16f877a.h: 2609: extern volatile __bit IRP __at(0x1F);
+[; ;pic16f877a.h: 2612: extern volatile __bit OBF __at(0x44E);
+[; ;pic16f877a.h: 2615: extern volatile __bit OERR __at(0xC1);
+[; ;pic16f877a.h: 2618: extern volatile __bit PCFG0 __at(0x4F8);
+[; ;pic16f877a.h: 2621: extern volatile __bit PCFG1 __at(0x4F9);
+[; ;pic16f877a.h: 2624: extern volatile __bit PCFG2 __at(0x4FA);
+[; ;pic16f877a.h: 2627: extern volatile __bit PCFG3 __at(0x4FB);
+[; ;pic16f877a.h: 2630: extern volatile __bit PEIE __at(0x5E);
+[; ;pic16f877a.h: 2633: extern volatile __bit PEN __at(0x48A);
+[; ;pic16f877a.h: 2636: extern volatile __bit PS0 __at(0x408);
+[; ;pic16f877a.h: 2639: extern volatile __bit PS1 __at(0x409);
+[; ;pic16f877a.h: 2642: extern volatile __bit PS2 __at(0x40A);
+[; ;pic16f877a.h: 2645: extern volatile __bit PSA __at(0x40B);
+[; ;pic16f877a.h: 2648: extern volatile __bit PSPIE __at(0x467);
+[; ;pic16f877a.h: 2651: extern volatile __bit PSPIF __at(0x67);
+[; ;pic16f877a.h: 2654: extern volatile __bit PSPMODE __at(0x44C);
+[; ;pic16f877a.h: 2657: extern volatile __bit RA0 __at(0x28);
+[; ;pic16f877a.h: 2660: extern volatile __bit RA1 __at(0x29);
+[; ;pic16f877a.h: 2663: extern volatile __bit RA2 __at(0x2A);
+[; ;pic16f877a.h: 2666: extern volatile __bit RA3 __at(0x2B);
+[; ;pic16f877a.h: 2669: extern volatile __bit RA4 __at(0x2C);
+[; ;pic16f877a.h: 2672: extern volatile __bit RA5 __at(0x2D);
+[; ;pic16f877a.h: 2675: extern volatile __bit RB0 __at(0x30);
+[; ;pic16f877a.h: 2678: extern volatile __bit RB1 __at(0x31);
+[; ;pic16f877a.h: 2681: extern volatile __bit RB2 __at(0x32);
+[; ;pic16f877a.h: 2684: extern volatile __bit RB3 __at(0x33);
+[; ;pic16f877a.h: 2687: extern volatile __bit RB4 __at(0x34);
+[; ;pic16f877a.h: 2690: extern volatile __bit RB5 __at(0x35);
+[; ;pic16f877a.h: 2693: extern volatile __bit RB6 __at(0x36);
+[; ;pic16f877a.h: 2696: extern volatile __bit RB7 __at(0x37);
+[; ;pic16f877a.h: 2699: extern volatile __bit RBIE __at(0x5B);
+[; ;pic16f877a.h: 2702: extern volatile __bit RBIF __at(0x58);
+[; ;pic16f877a.h: 2705: extern volatile __bit RC0 __at(0x38);
+[; ;pic16f877a.h: 2708: extern volatile __bit RC1 __at(0x39);
+[; ;pic16f877a.h: 2711: extern volatile __bit RC2 __at(0x3A);
+[; ;pic16f877a.h: 2714: extern volatile __bit RC3 __at(0x3B);
+[; ;pic16f877a.h: 2717: extern volatile __bit RC4 __at(0x3C);
+[; ;pic16f877a.h: 2720: extern volatile __bit RC5 __at(0x3D);
+[; ;pic16f877a.h: 2723: extern volatile __bit RC6 __at(0x3E);
+[; ;pic16f877a.h: 2726: extern volatile __bit RC7 __at(0x3F);
+[; ;pic16f877a.h: 2729: extern volatile __bit RC8_9 __at(0xC6);
+[; ;pic16f877a.h: 2732: extern volatile __bit RC9 __at(0xC6);
+[; ;pic16f877a.h: 2735: extern volatile __bit RCD8 __at(0xC0);
+[; ;pic16f877a.h: 2738: extern volatile __bit RCEN __at(0x48B);
+[; ;pic16f877a.h: 2741: extern volatile __bit RCIE __at(0x465);
+[; ;pic16f877a.h: 2744: extern volatile __bit RCIF __at(0x65);
+[; ;pic16f877a.h: 2747: extern volatile __bit RD __at(0xC60);
+[; ;pic16f877a.h: 2750: extern volatile __bit RD0 __at(0x40);
+[; ;pic16f877a.h: 2753: extern volatile __bit RD1 __at(0x41);
+[; ;pic16f877a.h: 2756: extern volatile __bit RD2 __at(0x42);
+[; ;pic16f877a.h: 2759: extern volatile __bit RD3 __at(0x43);
+[; ;pic16f877a.h: 2762: extern volatile __bit RD4 __at(0x44);
+[; ;pic16f877a.h: 2765: extern volatile __bit RD5 __at(0x45);
+[; ;pic16f877a.h: 2768: extern volatile __bit RD6 __at(0x46);
+[; ;pic16f877a.h: 2771: extern volatile __bit RD7 __at(0x47);
+[; ;pic16f877a.h: 2774: extern volatile __bit RE0 __at(0x48);
+[; ;pic16f877a.h: 2777: extern volatile __bit RE1 __at(0x49);
+[; ;pic16f877a.h: 2780: extern volatile __bit RE2 __at(0x4A);
+[; ;pic16f877a.h: 2783: extern volatile __bit READ_WRITE __at(0x4A2);
+[; ;pic16f877a.h: 2786: extern volatile __bit RP0 __at(0x1D);
+[; ;pic16f877a.h: 2789: extern volatile __bit RP1 __at(0x1E);
+[; ;pic16f877a.h: 2792: extern volatile __bit RSEN __at(0x489);
+[; ;pic16f877a.h: 2795: extern volatile __bit RX9 __at(0xC6);
+[; ;pic16f877a.h: 2798: extern volatile __bit RX9D __at(0xC0);
+[; ;pic16f877a.h: 2801: extern volatile __bit R_W __at(0x4A2);
+[; ;pic16f877a.h: 2804: extern volatile __bit R_nW __at(0x4A2);
+[; ;pic16f877a.h: 2807: extern volatile __bit SEN __at(0x488);
+[; ;pic16f877a.h: 2810: extern volatile __bit SMP __at(0x4A7);
+[; ;pic16f877a.h: 2813: extern volatile __bit SPEN __at(0xC7);
+[; ;pic16f877a.h: 2816: extern volatile __bit SREN __at(0xC5);
+[; ;pic16f877a.h: 2819: extern volatile __bit SSPEN __at(0xA5);
+[; ;pic16f877a.h: 2822: extern volatile __bit SSPIE __at(0x463);
+[; ;pic16f877a.h: 2825: extern volatile __bit SSPIF __at(0x63);
+[; ;pic16f877a.h: 2828: extern volatile __bit SSPM0 __at(0xA0);
+[; ;pic16f877a.h: 2831: extern volatile __bit SSPM1 __at(0xA1);
+[; ;pic16f877a.h: 2834: extern volatile __bit SSPM2 __at(0xA2);
+[; ;pic16f877a.h: 2837: extern volatile __bit SSPM3 __at(0xA3);
+[; ;pic16f877a.h: 2840: extern volatile __bit SSPOV __at(0xA6);
+[; ;pic16f877a.h: 2843: extern volatile __bit SYNC __at(0x4C4);
+[; ;pic16f877a.h: 2846: extern volatile __bit T0CS __at(0x40D);
+[; ;pic16f877a.h: 2849: extern volatile __bit T0IE __at(0x5D);
+[; ;pic16f877a.h: 2852: extern volatile __bit T0IF __at(0x5A);
+[; ;pic16f877a.h: 2855: extern volatile __bit T0SE __at(0x40C);
+[; ;pic16f877a.h: 2858: extern volatile __bit T1CKPS0 __at(0x84);
+[; ;pic16f877a.h: 2861: extern volatile __bit T1CKPS1 __at(0x85);
+[; ;pic16f877a.h: 2864: extern volatile __bit T1INSYNC __at(0x82);
+[; ;pic16f877a.h: 2867: extern volatile __bit T1OSCEN __at(0x83);
+[; ;pic16f877a.h: 2870: extern volatile __bit T1SYNC __at(0x82);
+[; ;pic16f877a.h: 2873: extern volatile __bit T2CKPS0 __at(0x90);
+[; ;pic16f877a.h: 2876: extern volatile __bit T2CKPS1 __at(0x91);
+[; ;pic16f877a.h: 2879: extern volatile __bit TMR0IE __at(0x5D);
+[; ;pic16f877a.h: 2882: extern volatile __bit TMR0IF __at(0x5A);
+[; ;pic16f877a.h: 2885: extern volatile __bit TMR1CS __at(0x81);
+[; ;pic16f877a.h: 2888: extern volatile __bit TMR1IE __at(0x460);
+[; ;pic16f877a.h: 2891: extern volatile __bit TMR1IF __at(0x60);
+[; ;pic16f877a.h: 2894: extern volatile __bit TMR1ON __at(0x80);
+[; ;pic16f877a.h: 2897: extern volatile __bit TMR2IE __at(0x461);
+[; ;pic16f877a.h: 2900: extern volatile __bit TMR2IF __at(0x61);
+[; ;pic16f877a.h: 2903: extern volatile __bit TMR2ON __at(0x92);
+[; ;pic16f877a.h: 2906: extern volatile __bit TOUTPS0 __at(0x93);
+[; ;pic16f877a.h: 2909: extern volatile __bit TOUTPS1 __at(0x94);
+[; ;pic16f877a.h: 2912: extern volatile __bit TOUTPS2 __at(0x95);
+[; ;pic16f877a.h: 2915: extern volatile __bit TOUTPS3 __at(0x96);
+[; ;pic16f877a.h: 2918: extern volatile __bit TRISA0 __at(0x428);
+[; ;pic16f877a.h: 2921: extern volatile __bit TRISA1 __at(0x429);
+[; ;pic16f877a.h: 2924: extern volatile __bit TRISA2 __at(0x42A);
+[; ;pic16f877a.h: 2927: extern volatile __bit TRISA3 __at(0x42B);
+[; ;pic16f877a.h: 2930: extern volatile __bit TRISA4 __at(0x42C);
+[; ;pic16f877a.h: 2933: extern volatile __bit TRISA5 __at(0x42D);
+[; ;pic16f877a.h: 2936: extern volatile __bit TRISB0 __at(0x430);
+[; ;pic16f877a.h: 2939: extern volatile __bit TRISB1 __at(0x431);
+[; ;pic16f877a.h: 2942: extern volatile __bit TRISB2 __at(0x432);
+[; ;pic16f877a.h: 2945: extern volatile __bit TRISB3 __at(0x433);
+[; ;pic16f877a.h: 2948: extern volatile __bit TRISB4 __at(0x434);
+[; ;pic16f877a.h: 2951: extern volatile __bit TRISB5 __at(0x435);
+[; ;pic16f877a.h: 2954: extern volatile __bit TRISB6 __at(0x436);
+[; ;pic16f877a.h: 2957: extern volatile __bit TRISB7 __at(0x437);
+[; ;pic16f877a.h: 2960: extern volatile __bit TRISC0 __at(0x438);
+[; ;pic16f877a.h: 2963: extern volatile __bit TRISC1 __at(0x439);
+[; ;pic16f877a.h: 2966: extern volatile __bit TRISC2 __at(0x43A);
+[; ;pic16f877a.h: 2969: extern volatile __bit TRISC3 __at(0x43B);
+[; ;pic16f877a.h: 2972: extern volatile __bit TRISC4 __at(0x43C);
+[; ;pic16f877a.h: 2975: extern volatile __bit TRISC5 __at(0x43D);
+[; ;pic16f877a.h: 2978: extern volatile __bit TRISC6 __at(0x43E);
+[; ;pic16f877a.h: 2981: extern volatile __bit TRISC7 __at(0x43F);
+[; ;pic16f877a.h: 2984: extern volatile __bit TRISD0 __at(0x440);
+[; ;pic16f877a.h: 2987: extern volatile __bit TRISD1 __at(0x441);
+[; ;pic16f877a.h: 2990: extern volatile __bit TRISD2 __at(0x442);
+[; ;pic16f877a.h: 2993: extern volatile __bit TRISD3 __at(0x443);
+[; ;pic16f877a.h: 2996: extern volatile __bit TRISD4 __at(0x444);
+[; ;pic16f877a.h: 2999: extern volatile __bit TRISD5 __at(0x445);
+[; ;pic16f877a.h: 3002: extern volatile __bit TRISD6 __at(0x446);
+[; ;pic16f877a.h: 3005: extern volatile __bit TRISD7 __at(0x447);
+[; ;pic16f877a.h: 3008: extern volatile __bit TRISE0 __at(0x448);
+[; ;pic16f877a.h: 3011: extern volatile __bit TRISE1 __at(0x449);
+[; ;pic16f877a.h: 3014: extern volatile __bit TRISE2 __at(0x44A);
+[; ;pic16f877a.h: 3017: extern volatile __bit TRMT __at(0x4C1);
+[; ;pic16f877a.h: 3020: extern volatile __bit TX8_9 __at(0x4C6);
+[; ;pic16f877a.h: 3023: extern volatile __bit TX9 __at(0x4C6);
+[; ;pic16f877a.h: 3026: extern volatile __bit TX9D __at(0x4C0);
+[; ;pic16f877a.h: 3029: extern volatile __bit TXD8 __at(0x4C0);
+[; ;pic16f877a.h: 3032: extern volatile __bit TXEN __at(0x4C5);
+[; ;pic16f877a.h: 3035: extern volatile __bit TXIE __at(0x464);
+[; ;pic16f877a.h: 3038: extern volatile __bit TXIF __at(0x64);
+[; ;pic16f877a.h: 3041: extern volatile __bit UA __at(0x4A1);
+[; ;pic16f877a.h: 3044: extern volatile __bit WCOL __at(0xA7);
+[; ;pic16f877a.h: 3047: extern volatile __bit WR __at(0xC61);
+[; ;pic16f877a.h: 3050: extern volatile __bit WREN __at(0xC62);
+[; ;pic16f877a.h: 3053: extern volatile __bit WRERR __at(0xC63);
+[; ;pic16f877a.h: 3056: extern volatile __bit ZERO __at(0x1A);
+[; ;pic16f877a.h: 3059: extern volatile __bit nA __at(0x4A5);
+[; ;pic16f877a.h: 3062: extern volatile __bit nADDRESS __at(0x4A5);
+[; ;pic16f877a.h: 3065: extern volatile __bit nBO __at(0x470);
+[; ;pic16f877a.h: 3068: extern volatile __bit nBOR __at(0x470);
+[; ;pic16f877a.h: 3071: extern volatile __bit nDONE __at(0xFA);
+[; ;pic16f877a.h: 3074: extern volatile __bit nPD __at(0x1B);
+[; ;pic16f877a.h: 3077: extern volatile __bit nPOR __at(0x471);
+[; ;pic16f877a.h: 3080: extern volatile __bit nRBPU __at(0x40F);
+[; ;pic16f877a.h: 3083: extern volatile __bit nRC8 __at(0xC6);
+[; ;pic16f877a.h: 3086: extern volatile __bit nT1SYNC __at(0x82);
+[; ;pic16f877a.h: 3089: extern volatile __bit nTO __at(0x1C);
+[; ;pic16f877a.h: 3092: extern volatile __bit nTX8 __at(0x4C6);
+[; ;pic16f877a.h: 3095: extern volatile __bit nW __at(0x4A2);
+[; ;pic16f877a.h: 3098: extern volatile __bit nWRITE __at(0x4A2);
+[; ;pic.h: 76: __attribute__((__unsupported__("The " "FLASH_READ" " macro function is no longer supported. Please use the MPLAB X MCC."))) unsigned char __flash_read(unsigned short addr);
+[; ;pic.h: 78: __attribute__((__unsupported__("The " "FLASH_WRITE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_write(unsigned short addr, unsigned short data);
+[; ;pic.h: 80: __attribute__((__unsupported__("The " "FLASH_ERASE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_erase(unsigned short addr);
+[; ;eeprom_routines.h: 114: extern void eeprom_write(unsigned char addr, unsigned char value);
+[; ;eeprom_routines.h: 115: extern unsigned char eeprom_read(unsigned char addr);
+[; ;pic.h: 127: extern __bank0 unsigned char __resetbits;
+[; ;pic.h: 128: extern __bank0 __bit __powerdown;
+[; ;pic.h: 129: extern __bank0 __bit __timeout;
+[; ;type.h: 11: typedef signed char int8_t;
+[; ;type.h: 12: typedef signed short int int16_t;
+[; ;type.h: 13: typedef signed int int32_t;
+[; ;type.h: 14: typedef signed long int int64_t;
+[; ;type.h: 16: typedef unsigned char uint8_t;
+[; ;type.h: 17: typedef unsigned short int uint16_t;
+[; ;type.h: 18: typedef unsigned int uint32_t;
+[; ;type.h: 19: typedef unsigned long int uint64_t;
+"40 uart.h
+[v _UartInit `(v ~T0 @X0 1 ef ]
+"41
+{
+[; ;uart.h: 40: void UartInit(void)
+[; ;uart.h: 41: {
+[e :U _UartInit ]
+[f ]
+[; ;uart.h: 42: TRISC |= 0xC0;
+"42
+[e =| _TRISC -> -> 192 `i `uc ]
+[; ;uart.h: 43: TXSTA = 0x24;
+"43
+[e = _TXSTA -> -> 36 `i `uc ]
+[; ;uart.h: 45: TRISB = 0x03;
+"45
+[e = _TRISB -> -> 3 `i `uc ]
+[; ;uart.h: 46: PORTC = 0x00;
+"46
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;uart.h: 47: RCSTA = 0x90;
+"47
+[e = _RCSTA -> -> 144 `i `uc ]
+[; ;uart.h: 51: SPBRG = 0;
+"51
+[e = _SPBRG -> -> 0 `i `uc ]
+[; ;uart.h: 52: }
+"52
+[e :UE 95 ]
+}
+"54
+[v _UartSendChar `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;uart.h: 54: void UartSendChar(uint8_t ch) {
+[e :U _UartSendChar ]
+[v _ch `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;uart.h: 55: while (!TXIF);
+"55
+[e $U 97  ]
+[e :U 98 ]
+[e :U 97 ]
+[e $ ! _TXIF 98  ]
+[e :U 99 ]
+[; ;uart.h: 56: TXREG = ch;
+"56
+[e = _TXREG _ch ]
+[; ;uart.h: 60: while (!TRMT);
+"60
+[e $U 100  ]
+[e :U 101 ]
+[e :U 100 ]
+[e $ ! _TRMT 101  ]
+[e :U 102 ]
+[; ;uart.h: 61: }
+"61
+[e :UE 96 ]
+}
+"63
+[v _UartSendUTF8 `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+{
+[; ;uart.h: 63: void UartSendUTF8(uint8_t a, uint8_t b, uint8_t c) {
+[e :U _UartSendUTF8 ]
+[v _a `uc ~T0 @X0 1 r1 ]
+[v _b `uc ~T0 @X0 1 r2 ]
+[v _c `uc ~T0 @X0 1 r3 ]
+[f ]
+[; ;uart.h: 64: UartSendChar(a);
+"64
+[e ( _UartSendChar (1 _a ]
+[; ;uart.h: 65: UartSendChar(b);
+"65
+[e ( _UartSendChar (1 _b ]
+[; ;uart.h: 66: UartSendChar(c);
+"66
+[e ( _UartSendChar (1 _c ]
+[; ;uart.h: 67: }
+"67
+[e :UE 103 ]
+}
+"69
+[v _UartSendString `(v ~T0 @X0 1 ef1`*Cuc ]
+{
+[; ;uart.h: 69: void UartSendString(const uint8_t *str) {
+[e :U _UartSendString ]
+[v _str `*Cuc ~T0 @X0 1 r1 ]
+[f ]
+[; ;uart.h: 70: while (*str) {
+"70
+[e $U 105  ]
+[e :U 106 ]
+{
+[; ;uart.h: 71: UartSendChar(*str);
+"71
+[e ( _UartSendChar (1 *U _str ]
+[; ;uart.h: 72: str++;
+"72
+[e ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x ]
+"73
+}
+[e :U 105 ]
+"70
+[e $ != -> *U _str `i -> -> -> 0 `i `Cuc `i 106  ]
+[e :U 107 ]
+[; ;uart.h: 73: }
+[; ;uart.h: 74: }
+"74
+[e :UE 104 ]
+}
+"76
+[v _UartSendEsc `(v ~T0 @X0 1 ef1`*uc ]
+{
+[; ;uart.h: 76: void UartSendEsc(uint8_t *str) {
+[e :U _UartSendEsc ]
+[v _str `*uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;uart.h: 77: UartSendChar(0x1b);
+"77
+[e ( _UartSendChar (1 -> -> 27 `i `uc ]
+[; ;uart.h: 78: UartSendString(str);
+"78
+[e ( _UartSendString (1 -> _str `*Cuc ]
+[; ;uart.h: 79: }
+"79
+[e :UE 108 ]
+}
+"81
+[v __UartRecvChar `(uc ~T0 @X0 1 ef ]
+{
+[; ;uart.h: 81: uint8_t _UartRecvChar(void) {
+[e :U __UartRecvChar ]
+[f ]
+[; ;uart.h: 82: while (!RCIF);
+"82
+[e $U 110  ]
+[e :U 111 ]
+[e :U 110 ]
+[e $ ! _RCIF 111  ]
+[e :U 112 ]
+[; ;uart.h: 83: return RCREG;
+"83
+[e ) _RCREG ]
+[e $UE 109  ]
+[; ;uart.h: 84: }
+"84
+[e :UE 109 ]
+}
+"86
+[v _UartRecvChar `(uc ~T0 @X0 1 ef ]
+{
+[; ;uart.h: 86: uint8_t UartRecvChar(void) {
+[e :U _UartRecvChar ]
+[f ]
+[; ;uart.h: 87: CREN = 1;
+"87
+[e = _CREN -> -> 1 `i `b ]
+"88
+[v _ch `uc ~T0 @X0 1 a ]
+[; ;uart.h: 88: uint8_t ch = _UartRecvChar();
+[e = _ch ( __UartRecvChar ..  ]
+[; ;uart.h: 89: CREN = 0;
+"89
+[e = _CREN -> -> 0 `i `b ]
+[; ;uart.h: 90: return ch;
+"90
+[e ) _ch ]
+[e $UE 113  ]
+[; ;uart.h: 91: }
+"91
+[e :UE 113 ]
+}
+"93
+[v _UartCurSet `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[; ;uart.h: 93: void UartCurSet(uint8_t x, uint8_t y) {
+[e :U _UartCurSet ]
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;uart.h: 94: UartSendString("\033[");
+"94
+[e ( _UartSendString (1 :s 1C ]
+[; ;uart.h: 95: if (y / 10) UartSendChar(y / 10 + '0');
+"95
+[e $ ! != / -> _y `i -> 10 `i -> 0 `i 115  ]
+[e ( _UartSendChar (1 -> + -> / -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 115 ]
+[; ;uart.h: 96: UartSendChar(y % 10 + '0');
+"96
+[e ( _UartSendChar (1 -> + -> % -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;uart.h: 97: UartSendChar(';');
+"97
+[e ( _UartSendChar (1 -> -> 59 `ui `uc ]
+[; ;uart.h: 98: if (x / 10) UartSendChar(x / 10 + '0');
+"98
+[e $ ! != / -> _x `i -> 10 `i -> 0 `i 116  ]
+[e ( _UartSendChar (1 -> + -> / -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 116 ]
+[; ;uart.h: 99: UartSendChar(x % 10 + '0');
+"99
+[e ( _UartSendChar (1 -> + -> % -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;uart.h: 100: UartSendChar('H');
+"100
+[e ( _UartSendChar (1 -> -> 72 `ui `uc ]
+[; ;uart.h: 101: }
+"101
+[e :UE 114 ]
+}
+"103
+[v _UartCurMove `(v ~T0 @X0 1 ef2`c`c ]
+{
+[; ;uart.h: 103: void UartCurMove(int8_t x, int8_t y) {
+[e :U _UartCurMove ]
+[v _x `c ~T0 @X0 1 r1 ]
+[v _y `c ~T0 @X0 1 r2 ]
+[f ]
+[; ;uart.h: 104: UartSendString("\033[");
+"104
+[e ( _UartSendString (1 :s 2C ]
+[; ;uart.h: 105: if (y > 0) {
+"105
+[e $ ! > -> _y `i -> 0 `i 118  ]
+{
+[; ;uart.h: 106: if (y / 10) UartSendChar(y / 10 + '0');
+"106
+[e $ ! != / -> _y `i -> 10 `i -> 0 `i 119  ]
+[e ( _UartSendChar (1 -> + -> / -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 119 ]
+[; ;uart.h: 107: UartSendChar(y % 10 + '0');
+"107
+[e ( _UartSendChar (1 -> + -> % -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;uart.h: 108: UartSendChar('B');
+"108
+[e ( _UartSendChar (1 -> -> 66 `ui `uc ]
+"109
+}
+[; ;uart.h: 109: } else {
+[e $U 120  ]
+[e :U 118 ]
+{
+[; ;uart.h: 110: if (-y / 10) UartSendChar(-y / 10 + '0');
+"110
+[e $ ! != / -U -> _y `i -> 10 `i -> 0 `i 121  ]
+[e ( _UartSendChar (1 -> + -> / -U -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 121 ]
+[; ;uart.h: 111: UartSendChar(-y % 10 + '0');
+"111
+[e ( _UartSendChar (1 -> + -> % -U -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;uart.h: 112: UartSendChar('A');
+"112
+[e ( _UartSendChar (1 -> -> 65 `ui `uc ]
+"113
+}
+[e :U 120 ]
+[; ;uart.h: 113: }
+[; ;uart.h: 114: UartSendString("\033[");
+"114
+[e ( _UartSendString (1 :s 3C ]
+[; ;uart.h: 115: if (x > 0) {
+"115
+[e $ ! > -> _x `i -> 0 `i 122  ]
+{
+[; ;uart.h: 116: if (x / 10) UartSendChar(x / 10 + '0');
+"116
+[e $ ! != / -> _x `i -> 10 `i -> 0 `i 123  ]
+[e ( _UartSendChar (1 -> + -> / -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 123 ]
+[; ;uart.h: 117: UartSendChar(x % 10 + '0');
+"117
+[e ( _UartSendChar (1 -> + -> % -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;uart.h: 118: UartSendChar('C');
+"118
+[e ( _UartSendChar (1 -> -> 67 `ui `uc ]
+"119
+}
+[; ;uart.h: 119: } else {
+[e $U 124  ]
+[e :U 122 ]
+{
+[; ;uart.h: 120: if (-x / 10) UartSendChar(-x / 10 + '0');
+"120
+[e $ ! != / -U -> _x `i -> 10 `i -> 0 `i 125  ]
+[e ( _UartSendChar (1 -> + -> / -U -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 125 ]
+[; ;uart.h: 121: UartSendChar(-x % 10 + '0');
+"121
+[e ( _UartSendChar (1 -> + -> % -U -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;uart.h: 122: UartSendChar('D');
+"122
+[e ( _UartSendChar (1 -> -> 68 `ui `uc ]
+"123
+}
+[e :U 124 ]
+[; ;uart.h: 123: }
+[; ;uart.h: 124: }
+"124
+[e :UE 117 ]
+}
+"126
+[v _UartCurShow `(v ~T0 @X0 1 ef1`c ]
+{
+[; ;uart.h: 126: void UartCurShow(int8_t show) {
+[e :U _UartCurShow ]
+[v _show `c ~T0 @X0 1 r1 ]
+[f ]
+[; ;uart.h: 129: }
+"129
+[e :UE 126 ]
+}
+"45 led.h
+[v _LedInit `(v ~T0 @X0 1 ef ]
+"46
+{
+[; ;led.h: 45: void LedInit(void)
+[; ;led.h: 46: {
+[e :U _LedInit ]
+[f ]
+[; ;led.h: 47: TRISC &= 0xfc;
+"47
+[e =& _TRISC -> -> 252 `i `uc ]
+[; ;led.h: 48: TRISD = 0x00;
+"48
+[e = _TRISD -> -> 0 `i `uc ]
+[; ;led.h: 49: PORTC &= 0xfc;
+"49
+[e =& _PORTC -> -> 252 `i `uc ]
+[; ;led.h: 50: PORTD = 0xff;
+"50
+[e = _PORTD -> -> 255 `i `uc ]
+[; ;led.h: 51: }
+"51
+[e :UE 127 ]
+}
+"53
+[v _LedClear `(v ~T0 @X0 1 ef ]
+"54
+{
+[; ;led.h: 53: void LedClear(void)
+[; ;led.h: 54: {
+[e :U _LedClear ]
+[f ]
+[; ;led.h: 55: PORTC &= 0xfc;
+"55
+[e =& _PORTC -> -> 252 `i `uc ]
+[; ;led.h: 56: PORTD = 0xff;
+"56
+[e = _PORTD -> -> 255 `i `uc ]
+[; ;led.h: 57: }
+"57
+[e :UE 128 ]
+}
+"59
+[v _LedSetGrn `(v ~T0 @X0 1 ef1`uc ]
+"60
+{
+[; ;led.h: 59: void LedSetGrn(uint8_t state)
+[; ;led.h: 60: {
+[e :U _LedSetGrn ]
+"59
+[v _state `uc ~T0 @X0 1 r1 ]
+"60
+[f ]
+[; ;led.h: 61: RC0 = state;
+"61
+[e = _RC0 -> _state `b ]
+[; ;led.h: 62: }
+"62
+[e :UE 129 ]
+}
+"64
+[v _LedSetRed `(v ~T0 @X0 1 ef1`uc ]
+"65
+{
+[; ;led.h: 64: void LedSetRed(uint8_t state)
+[; ;led.h: 65: {
+[e :U _LedSetRed ]
+"64
+[v _state `uc ~T0 @X0 1 r1 ]
+"65
+[f ]
+[; ;led.h: 66: RC1 = state;
+"66
+[e = _RC1 -> _state `b ]
+[; ;led.h: 67: }
+"67
+[e :UE 130 ]
+}
+"69
+[v _LedGetGrn `(uc ~T0 @X0 1 ef ]
+"70
+{
+[; ;led.h: 69: uint8_t LedGetGrn(void)
+[; ;led.h: 70: {
+[e :U _LedGetGrn ]
+[f ]
+[; ;led.h: 71: return RC0;
+"71
+[e ) -> -> _RC0 `i `uc ]
+[e $UE 131  ]
+[; ;led.h: 72: }
+"72
+[e :UE 131 ]
+}
+"74
+[v _LedGetRed `(uc ~T0 @X0 1 ef ]
+"75
+{
+[; ;led.h: 74: uint8_t LedGetRed(void)
+[; ;led.h: 75: {
+[e :U _LedGetRed ]
+[f ]
+[; ;led.h: 76: return RC1;
+"76
+[e ) -> -> _RC1 `i `uc ]
+[e $UE 132  ]
+[; ;led.h: 77: }
+"77
+[e :UE 132 ]
+}
+"79
+[v _LedSetBar `(v ~T0 @X0 1 ef1`uc ]
+"80
+{
+[; ;led.h: 79: void LedSetBar(uint8_t state)
+[; ;led.h: 80: {
+[e :U _LedSetBar ]
+"79
+[v _state `uc ~T0 @X0 1 r1 ]
+"80
+[f ]
+[; ;led.h: 81: PORTD = ~state;
+"81
+[e = _PORTD -> ~ -> _state `i `uc ]
+[; ;led.h: 82: }
+"82
+[e :UE 133 ]
+}
+"84
+[v _LedSetBarPin `(v ~T0 @X0 1 ef2`uc`uc ]
+"85
+{
+[; ;led.h: 84: void LedSetBarPin(uint8_t pin, uint8_t state)
+[; ;led.h: 85: {
+[e :U _LedSetBarPin ]
+"84
+[v _pin `uc ~T0 @X0 1 r1 ]
+[v _state `uc ~T0 @X0 1 r2 ]
+"85
+[f ]
+[; ;led.h: 86: if (state)
+"86
+[e $ ! != -> _state `i -> -> -> 0 `i `uc `i 135  ]
+[; ;led.h: 87: PORTD &= ~pin;
+"87
+[e =& _PORTD -> ~ -> _pin `i `uc ]
+[e $U 136  ]
+"88
+[e :U 135 ]
+[; ;led.h: 88: else
+[; ;led.h: 89: PORTD |= pin;
+"89
+[e =| _PORTD _pin ]
+[e :U 136 ]
+[; ;led.h: 90: }
+"90
+[e :UE 134 ]
+}
+[; ;queue.h: 34: typedef struct Queue {
+[; ;queue.h: 35: uint16_t _data;
+[; ;queue.h: 38: uint8_t ht;
+[; ;queue.h: 39: }queue;
+"43 queue.h
+[v _QueueInit `(v ~T0 @X0 1 ef1`*S137 ]
+{
+[; ;queue.h: 43: void QueueInit(queue *q) {
+[e :U _QueueInit ]
+[v _q `*S137 ~T0 @X0 1 r1 ]
+[f ]
+[; ;queue.h: 44: q->_data = 0;
+"44
+[e = . *U _q 0 -> -> 0 `i `ui ]
+[; ;queue.h: 47: q->ht = 0;
+"47
+[e = . *U _q 1 -> -> 0 `i `uc ]
+[; ;queue.h: 48: }
+"48
+[e :UE 138 ]
+}
+"50
+[v __next `(uc ~T0 @X0 1 ef1`uc ]
+{
+[; ;queue.h: 50: uint8_t _next(uint8_t n) {
+[e :U __next ]
+[v _n `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;queue.h: 51: n++;
+"51
+[e ++ _n -> -> 1 `i `uc ]
+[; ;queue.h: 52: if (n > 15) return 0;
+"52
+[e $ ! > -> _n `i -> 15 `i 140  ]
+[e ) -> -> 0 `i `uc ]
+[e $UE 139  ]
+[e :U 140 ]
+[; ;queue.h: 53: return n;
+"53
+[e ) _n ]
+[e $UE 139  ]
+[; ;queue.h: 54: }
+"54
+[e :UE 139 ]
+}
+"56
+[v _QueueLength `(uc ~T0 @X0 1 ef1`*S137 ]
+{
+[; ;queue.h: 56: uint8_t QueueLength(queue *q) {
+[e :U _QueueLength ]
+[v _q `*S137 ~T0 @X0 1 r1 ]
+[f ]
+"58
+[v _length `c ~T0 @X0 1 a ]
+[; ;queue.h: 58: int8_t length = (q->ht & 15) - (q->ht>>4);
+[e = _length -> - & -> . *U _q 1 `i -> 15 `i >> -> . *U _q 1 `i -> 4 `i `c ]
+[; ;queue.h: 59: return length >= 0 ? length : length + 16;
+"59
+[e ) -> ? >= -> _length `i -> 0 `i : -> _length `i + -> _length `i -> 16 `i `uc ]
+[e $UE 141  ]
+[; ;queue.h: 60: }
+"60
+[e :UE 141 ]
+}
+"62
+[v _QueuePush `(uc ~T0 @X0 1 ef2`*S137`uc ]
+{
+[; ;queue.h: 62: uint8_t QueuePush(queue *q, uint8_t i) {
+[e :U _QueuePush ]
+[v _q `*S137 ~T0 @X0 1 r1 ]
+[v _i `uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;queue.h: 63: if (QueueLength(q) < 15) {
+"63
+[e $ ! < -> ( _QueueLength (1 _q `i -> 15 `i 143  ]
+{
+[; ;queue.h: 64: q->_data &= ~(1 << (q->ht&15));
+"64
+[e =& . *U _q 0 -> ~ << -> 1 `i & -> . *U _q 1 `i -> 15 `i `ui ]
+[; ;queue.h: 65: q->_data |= (i & 1) << (q->ht&15);
+"65
+[e =| . *U _q 0 -> << & -> _i `i -> 1 `i & -> . *U _q 1 `i -> 15 `i `ui ]
+[; ;queue.h: 66: q->ht = _next(q->ht & 15) + (q->ht&15);
+"66
+[e = . *U _q 1 -> + -> ( __next (1 -> & -> . *U _q 1 `i -> 15 `i `uc `i & -> . *U _q 1 `i -> 15 `i `uc ]
+[; ;queue.h: 70: return 1;
+"70
+[e ) -> -> 1 `i `uc ]
+[e $UE 142  ]
+"71
+}
+[e :U 143 ]
+[; ;queue.h: 71: }
+[; ;queue.h: 72: return 0;
+"72
+[e ) -> -> 0 `i `uc ]
+[e $UE 142  ]
+[; ;queue.h: 73: }
+"73
+[e :UE 142 ]
+}
+"75
+[v _QueuePop `(uc ~T0 @X0 1 ef1`*S137 ]
+{
+[; ;queue.h: 75: uint8_t QueuePop(queue *q) {
+[e :U _QueuePop ]
+[v _q `*S137 ~T0 @X0 1 r1 ]
+[f ]
+[; ;queue.h: 76: if (QueueLength(q) == 0) return 2;
+"76
+[e $ ! == -> ( _QueueLength (1 _q `i -> 0 `i 145  ]
+[e ) -> -> 2 `i `uc ]
+[e $UE 144  ]
+[e :U 145 ]
+"77
+[v _ret `uc ~T0 @X0 1 a ]
+[; ;queue.h: 77: uint8_t ret = (q->_data & 1 << (q->ht>>4)) > 0 ? 1 : 0;
+[e = _ret -> ? > & . *U _q 0 -> << -> 1 `i >> -> . *U _q 1 `i -> 4 `i `ui -> -> 0 `i `ui : -> 1 `i -> 0 `i `uc ]
+[; ;queue.h: 78: q->ht = (_next((q->ht>>4)) << 4) + (q->ht&15);
+"78
+[e = . *U _q 1 -> + << -> ( __next (1 -> >> -> . *U _q 1 `i -> 4 `i `uc `i -> 4 `i & -> . *U _q 1 `i -> 15 `i `uc ]
+[; ;queue.h: 81: return ret;
+"81
+[e ) _ret ]
+[e $UE 144  ]
+[; ;queue.h: 82: }
+"82
+[e :UE 144 ]
+}
+"34 adc.h
+[v _AdcInit `(v ~T0 @X0 1 ef ]
+{
+[; ;adc.h: 34: void AdcInit() {
+[e :U _AdcInit ]
+[f ]
+[; ;adc.h: 35: ADCON0 = 0x11;
+"35
+[e = _ADCON0 -> -> 17 `i `uc ]
+[; ;adc.h: 36: ADCON1 = 0x02;
+"36
+[e = _ADCON1 -> -> 2 `i `uc ]
+[; ;adc.h: 37: TRISA |= 0x04;
+"37
+[e =| _TRISA -> -> 4 `i `uc ]
+[; ;adc.h: 38: }
+"38
+[e :UE 146 ]
+}
+"40
+[v _AdcSetChan `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;adc.h: 40: void AdcSetChan(uint8_t chan) {
+[e :U _AdcSetChan ]
+[v _chan `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;adc.h: 41: ADCON0 &= 0xc7;
+"41
+[e =& _ADCON0 -> -> 199 `i `uc ]
+[; ;adc.h: 42: ADCON0 |= chan << 3;
+"42
+[e =| _ADCON0 -> << -> _chan `i -> 3 `i `uc ]
+[; ;adc.h: 43: }
+"43
+[e :UE 147 ]
+}
+"45
+[v _AdcGo `(v ~T0 @X0 1 ef ]
+{
+[; ;adc.h: 45: void AdcGo() {
+[e :U _AdcGo ]
+[f ]
+[; ;adc.h: 46: ADCON0 |= 0x04;
+"46
+[e =| _ADCON0 -> -> 4 `i `uc ]
+[; ;adc.h: 47: }
+"47
+[e :UE 148 ]
+}
+"49
+[v __AdcWait `(v ~T0 @X0 1 ef ]
+{
+[; ;adc.h: 49: void _AdcWait() {
+[e :U __AdcWait ]
+[f ]
+[; ;adc.h: 50: while (!ADIF && !ADIE);
+"50
+[e $U 150  ]
+[e :U 151 ]
+[e :U 150 ]
+[e $ && ! _ADIF ! _ADIE 151  ]
+[e :U 152 ]
+[; ;adc.h: 51: }
+"51
+[e :UE 149 ]
+}
+"53
+[v _AdcVoltH `(uc ~T0 @X0 1 ef ]
+{
+[; ;adc.h: 53: uint8_t AdcVoltH() {
+[e :U _AdcVoltH ]
+[f ]
+[; ;adc.h: 54: _AdcWait();
+"54
+[e ( __AdcWait ..  ]
+[; ;adc.h: 55: return ADRESH;
+"55
+[e ) _ADRESH ]
+[e $UE 153  ]
+[; ;adc.h: 56: }
+"56
+[e :UE 153 ]
+}
+"58
+[v _AdcVoltL `(uc ~T0 @X0 1 ef ]
+{
+[; ;adc.h: 58: uint8_t AdcVoltL() {
+[e :U _AdcVoltL ]
+[f ]
+[; ;adc.h: 59: _AdcWait();
+"59
+[e ( __AdcWait ..  ]
+[; ;adc.h: 60: return ADRESL;
+"60
+[e ) _ADRESL ]
+[e $UE 154  ]
+[; ;adc.h: 61: }
+"61
+[e :UE 154 ]
+}
+"63
+[v _AdcVoltA `(ui ~T0 @X0 1 ef ]
+{
+[; ;adc.h: 63: uint16_t AdcVoltA() {
+[e :U _AdcVoltA ]
+[f ]
+[; ;adc.h: 64: _AdcWait();
+"64
+[e ( __AdcWait ..  ]
+[; ;adc.h: 65: return (ADRESH << 8) | ADRESL;
+"65
+[e ) -> | << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+[e $UE 155  ]
+[; ;adc.h: 66: }
+"66
+[e :UE 155 ]
+}
+[; ;pos.h: 26: typedef struct Position {
+[; ;pos.h: 27: uint8_t x, y;
+[; ;pos.h: 28: } pos;
+"32 pos.h
+[v _PosMoveToPos `(v ~T0 @X0 1 ef2`*S156`*S156 ]
+{
+[; ;pos.h: 32: void PosMoveToPos(pos *from, pos *to) {
+[e :U _PosMoveToPos ]
+[v _from `*S156 ~T0 @X0 1 r1 ]
+[v _to `*S156 ~T0 @X0 1 r2 ]
+[f ]
+[; ;pos.h: 33: UartSendString("\033[");
+"33
+[e ( _UartSendString (1 :s 4C ]
+[; ;pos.h: 34: if (to->x / 10) UartSendChar(to->x / 10 + '0');
+"34
+[e $ ! != / -> . *U _to 0 `i -> 10 `i -> 0 `i 158  ]
+[e ( _UartSendChar (1 -> + -> / -> . *U _to 0 `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 158 ]
+[; ;pos.h: 35: UartSendChar(to->x % 10 + '0');
+"35
+[e ( _UartSendChar (1 -> + -> % -> . *U _to 0 `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;pos.h: 36: UartSendChar(';');
+"36
+[e ( _UartSendChar (1 -> -> 59 `ui `uc ]
+[; ;pos.h: 37: if (to->y / 10) UartSendChar(to->y / 10 + '0');
+"37
+[e $ ! != / -> . *U _to 1 `i -> 10 `i -> 0 `i 159  ]
+[e ( _UartSendChar (1 -> + -> / -> . *U _to 1 `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 159 ]
+[; ;pos.h: 38: UartSendChar(to->y % 10 + '0');
+"38
+[e ( _UartSendChar (1 -> + -> % -> . *U _to 1 `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;pos.h: 39: UartSendChar('H');
+"39
+[e ( _UartSendChar (1 -> -> 72 `ui `uc ]
+[; ;pos.h: 40: from->x = to->x;
+"40
+[e = . *U _from 0 . *U _to 0 ]
+[; ;pos.h: 41: from->y = to->y;
+"41
+[e = . *U _from 1 . *U _to 1 ]
+[; ;pos.h: 60: }
+"60
+[e :UE 157 ]
+}
+"62
+[v _PosMoveToNum `(v ~T0 @X0 1 ef3`*S156`uc`uc ]
+{
+[; ;pos.h: 62: void PosMoveToNum(pos *from, uint8_t x, uint8_t y) {
+[e :U _PosMoveToNum ]
+[v _from `*S156 ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _y `uc ~T0 @X0 1 r3 ]
+[f ]
+[; ;pos.h: 63: UartSendString("\033[");
+"63
+[e ( _UartSendString (1 :s 5C ]
+[; ;pos.h: 64: if (y / 10) UartSendChar(y / 10 + '0');
+"64
+[e $ ! != / -> _y `i -> 10 `i -> 0 `i 161  ]
+[e ( _UartSendChar (1 -> + -> / -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 161 ]
+[; ;pos.h: 65: UartSendChar(y % 10 + '0');
+"65
+[e ( _UartSendChar (1 -> + -> % -> _y `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;pos.h: 66: UartSendChar(';');
+"66
+[e ( _UartSendChar (1 -> -> 59 `ui `uc ]
+[; ;pos.h: 67: if (x / 10) UartSendChar(x / 10 + '0');
+"67
+[e $ ! != / -> _x `i -> 10 `i -> 0 `i 162  ]
+[e ( _UartSendChar (1 -> + -> / -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[e :U 162 ]
+[; ;pos.h: 68: UartSendChar(x % 10 + '0');
+"68
+[e ( _UartSendChar (1 -> + -> % -> _x `i -> 10 `i `ui -> 48 `ui `uc ]
+[; ;pos.h: 69: UartSendChar('H');
+"69
+[e ( _UartSendChar (1 -> -> 72 `ui `uc ]
+[; ;pos.h: 70: from->x = x;
+"70
+[e = . *U _from 0 _x ]
+[; ;pos.h: 71: from->y = y;
+"71
+[e = . *U _from 1 _y ]
+[; ;pos.h: 90: }
+"90
+[e :UE 160 ]
+}
+"92
+[v _PosMove `(v ~T0 @X0 1 ef3`*S156`c`c ]
+{
+[; ;pos.h: 92: void PosMove(pos *cur, int8_t x, int8_t y) {
+[e :U _PosMove ]
+[v _cur `*S156 ~T0 @X0 1 r1 ]
+[v _x `c ~T0 @X0 1 r2 ]
+[v _y `c ~T0 @X0 1 r3 ]
+[f ]
+[; ;pos.h: 93: PosMoveToNum(cur, cur->x+x, cur->y+y);
+"93
+[e ( _PosMoveToNum (3 , , _cur -> + -> . *U _cur 0 `i -> _x `i `uc -> + -> . *U _cur 1 `i -> _y `i `uc ]
+[; ;pos.h: 114: }
+"114
+[e :UE 163 ]
+}
+"29 ui.h
+[v _UIPageMain `(v ~T0 @X0 1 ef ]
+{
+[; ;ui.h: 29: void UIPageMain() {
+[e :U _UIPageMain ]
+[f ]
+[; ;ui.h: 30: UartCurShow(0);
+"30
+[e ( _UartCurShow (1 -> -> 0 `i `c ]
+[; ;ui.h: 31: UartSendString("\f");
+"31
+[e ( _UartSendString (1 :s 6C ]
+[; ;ui.h: 32: UartSendUTF8(0xe2, 0x94, 0x8c);
+"32
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 140 `i `uc ]
+[; ;ui.h: 33: for (uint8_t i = 0; i < 64; i++) {
+"33
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 64 `i 165  ]
+[e $U 166  ]
+[e :U 165 ]
+{
+[; ;ui.h: 34: UartSendUTF8(0xe2, 0x94, 0x80);
+"34
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 128 `i `uc ]
+"35
+}
+"33
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 64 `i 165  ]
+[e :U 166 ]
+"35
+}
+[; ;ui.h: 35: }
+[; ;ui.h: 36: UartSendUTF8(0xe2, 0x94, 0x90);
+"36
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 144 `i `uc ]
+[; ;ui.h: 37: for (uint8_t i = 0; i < 20; i++) {
+"37
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 20 `i 168  ]
+[e $U 169  ]
+[e :U 168 ]
+{
+[; ;ui.h: 38: UartSendString("\n\r");
+"38
+[e ( _UartSendString (1 :s 7C ]
+[; ;ui.h: 39: UartSendUTF8(0xe2, 0x94, 0x82);
+"39
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 130 `i `uc ]
+[; ;ui.h: 40: if (i == 5) {
+"40
+[e $ ! == -> _i `i -> 5 `i 171  ]
+{
+[; ;ui.h: 41: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"41
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 172  ]
+[e $U 173  ]
+[e :U 172 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 172  ]
+[e :U 173 ]
+}
+[; ;ui.h: 42: UartSendString("\xe4\xbf\x84 \xe7\xbd\x97 \xe6\x96\xaf \xe6\x96\xb9 \xe5\x9d\x97");
+"42
+[e ( _UartSendString (1 :s 8C ]
+[; ;ui.h: 43: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"43
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 175  ]
+[e $U 176  ]
+[e :U 175 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 175  ]
+[e :U 176 ]
+}
+"44
+}
+[; ;ui.h: 44: } else if (i == 7) {
+[e $U 178  ]
+[e :U 171 ]
+[e $ ! == -> _i `i -> 7 `i 179  ]
+{
+[; ;ui.h: 45: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"45
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 180  ]
+[e $U 181  ]
+[e :U 180 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 180  ]
+[e :U 181 ]
+}
+[; ;ui.h: 46: UartSendString("\xe6\xa2\x85\xe5\x8a\xaa\xe6\x96\xaf\xe7\x94\xb5\xe4\xbf\xa1\xe4\xb8\x89\xe7\x8f\xad");
+"46
+[e ( _UartSendString (1 :s 9C ]
+[; ;ui.h: 47: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"47
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 183  ]
+[e $U 184  ]
+[e :U 183 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 183  ]
+[e :U 184 ]
+}
+"48
+}
+[; ;ui.h: 48: } else if (i == 9) {
+[e $U 186  ]
+[e :U 179 ]
+[e $ ! == -> _i `i -> 9 `i 187  ]
+{
+[; ;ui.h: 49: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"49
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 188  ]
+[e $U 189  ]
+[e :U 188 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 188  ]
+[e :U 189 ]
+}
+[; ;ui.h: 50: UartSendString("\xe5\xbc\xa0\xe9\x92\x8a\xe6\xb4\x8b  \xe9\x99\x88\xe6\x81\xba\xe4\xb8\xb0");
+"50
+[e ( _UartSendString (1 :s 10C ]
+[; ;ui.h: 51: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"51
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 191  ]
+[e $U 192  ]
+[e :U 191 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 191  ]
+[e :U 192 ]
+}
+"52
+}
+[; ;ui.h: 52: } else if (i == 15) {
+[e $U 194  ]
+[e :U 187 ]
+[e $ ! == -> _i `i -> 15 `i 195  ]
+{
+[; ;ui.h: 53: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"53
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 196  ]
+[e $U 197  ]
+[e :U 196 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 196  ]
+[e :U 197 ]
+}
+[; ;ui.h: 54: UartSendString("\xef\xbc\x88\xe6\x8c\x89\xe4\xb8\x8b\xe5\x9b\x9e\xe8\xbd\xa6\xe9\x94\xae\xef\xbc\x89");
+"54
+[e ( _UartSendString (1 :s 11C ]
+[; ;ui.h: 55: for (uint8_t j = 0; j < 25; j++) UartSendChar(' ');
+"55
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 25 `i 199  ]
+[e $U 200  ]
+[e :U 199 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 25 `i 199  ]
+[e :U 200 ]
+}
+"56
+}
+[; ;ui.h: 56: } else {
+[e $U 202  ]
+[e :U 195 ]
+{
+[; ;ui.h: 57: for (uint8_t j = 0; j < 64; j++) UartSendChar(' ');
+"57
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 64 `i 203  ]
+[e $U 204  ]
+[e :U 203 ]
+[e ( _UartSendChar (1 -> -> 32 `ui `uc ]
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 64 `i 203  ]
+[e :U 204 ]
+}
+"58
+}
+[e :U 202 ]
+[e :U 194 ]
+[e :U 186 ]
+[e :U 178 ]
+[; ;ui.h: 58: }
+[; ;ui.h: 59: UartSendUTF8(0xe2, 0x94, 0x82);
+"59
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 130 `i `uc ]
+"60
+}
+"37
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 20 `i 168  ]
+[e :U 169 ]
+"60
+}
+[; ;ui.h: 60: }
+[; ;ui.h: 61: UartSendString("\n\r");
+"61
+[e ( _UartSendString (1 :s 12C ]
+[; ;ui.h: 62: UartSendUTF8(0xe2, 0x94, 0x94);
+"62
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 148 `i `uc ]
+[; ;ui.h: 63: for (uint8_t i = 0; i < 64; i++) {
+"63
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 64 `i 206  ]
+[e $U 207  ]
+[e :U 206 ]
+{
+[; ;ui.h: 64: UartSendUTF8(0xe2, 0x94, 0x80);
+"64
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 128 `i `uc ]
+"65
+}
+"63
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 64 `i 206  ]
+[e :U 207 ]
+"65
+}
+[; ;ui.h: 65: }
+[; ;ui.h: 66: UartSendUTF8(0xe2, 0x94, 0x98);
+"66
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 152 `i `uc ]
+[; ;ui.h: 67: }
+"67
+[e :UE 164 ]
+}
+"69
+[v _UIClearGame `(v ~T0 @X0 1 ef ]
+{
+[; ;ui.h: 69: void UIClearGame() {
+[e :U _UIClearGame ]
+[f ]
+[; ;ui.h: 70: UartCurSet(24, 2);
+"70
+[e ( _UartCurSet (2 , -> -> 24 `i `uc -> -> 2 `i `uc ]
+[; ;ui.h: 71: for (uint8_t i = 0; i < 20; i++) {
+"71
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 20 `i 210  ]
+[e $U 211  ]
+[e :U 210 ]
+{
+[; ;ui.h: 72: UartSendString("                    ");
+"72
+[e ( _UartSendString (1 :s 13C ]
+[; ;ui.h: 73: if (i != 19) UartCurMove(-20, 1);
+"73
+[e $ ! != -> _i `i -> 19 `i 213  ]
+[e ( _UartCurMove (2 , -> -U -> 20 `i `c -> -> 1 `i `c ]
+[e :U 213 ]
+"74
+}
+"71
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 20 `i 210  ]
+[e :U 211 ]
+"74
+}
+[; ;ui.h: 74: }
+[; ;ui.h: 75: }
+"75
+[e :UE 209 ]
+}
+"77
+[v _UIPageMainToGame `(v ~T0 @X0 1 ef ]
+{
+[; ;ui.h: 77: void UIPageMainToGame() {
+[e :U _UIPageMainToGame ]
+[f ]
+[; ;ui.h: 78: UIClearGame();
+"78
+[e ( _UIClearGame ..  ]
+[; ;ui.h: 79: UartCurSet(44, 1);
+"79
+[e ( _UartCurSet (2 , -> -> 44 `i `uc -> -> 1 `i `uc ]
+[; ;ui.h: 80: UartSendString("\xe2\x94\xac");
+"80
+[e ( _UartSendString (1 :s 14C ]
+[; ;ui.h: 81: for (uint8_t i = 2; i < 22; i++) {
+"81
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 2 `i `uc ]
+[e $ < -> _i `i -> 22 `i 215  ]
+[e $U 216  ]
+[e :U 215 ]
+{
+[; ;ui.h: 82: UartCurMove(-1, 1);
+"82
+[e ( _UartCurMove (2 , -> -U -> 1 `i `c -> -> 1 `i `c ]
+[; ;ui.h: 83: UartSendUTF8(0xe2, 0x94, 0x82);
+"83
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 130 `i `uc ]
+"84
+}
+"81
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 22 `i 215  ]
+[e :U 216 ]
+"84
+}
+[; ;ui.h: 84: }
+[; ;ui.h: 85: UartCurMove(-1, 1);
+"85
+[e ( _UartCurMove (2 , -> -U -> 1 `i `c -> -> 1 `i `c ]
+[; ;ui.h: 86: UartSendUTF8(0xe2, 0x94, 0xB4);
+"86
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 180 `i `uc ]
+[; ;ui.h: 87: UartCurSet(23, 1);
+"87
+[e ( _UartCurSet (2 , -> -> 23 `i `uc -> -> 1 `i `uc ]
+[; ;ui.h: 88: UartSendUTF8(0xE2, 0x94, 0xac);
+"88
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 172 `i `uc ]
+[; ;ui.h: 89: for (uint8_t i = 2; i < 22; i++) {
+"89
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 2 `i `uc ]
+[e $ < -> _i `i -> 22 `i 218  ]
+[e $U 219  ]
+[e :U 218 ]
+{
+[; ;ui.h: 90: UartCurMove(-1, 1);
+"90
+[e ( _UartCurMove (2 , -> -U -> 1 `i `c -> -> 1 `i `c ]
+[; ;ui.h: 91: UartSendUTF8(0xe2, 0x94, 0x82);
+"91
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 130 `i `uc ]
+"92
+}
+"89
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 22 `i 218  ]
+[e :U 219 ]
+"92
+}
+[; ;ui.h: 92: }
+[; ;ui.h: 93: UartCurMove(-1, 1);
+"93
+[e ( _UartCurMove (2 , -> -U -> 1 `i `c -> -> 1 `i `c ]
+[; ;ui.h: 94: UartSendUTF8(0xe2, 0x94, 0xB4);
+"94
+[e ( _UartSendUTF8 (3 , , -> -> 226 `i `uc -> -> 148 `i `uc -> -> 180 `i `uc ]
+[; ;ui.h: 95: UartCurSet(50, 4);
+"95
+[e ( _UartCurSet (2 , -> -> 50 `i `uc -> -> 4 `i `uc ]
+[; ;ui.h: 96: UartSendString("\xe2\x94\x8c");
+"96
+[e ( _UartSendString (1 :s 15C ]
+[; ;ui.h: 97: for (uint8_t i = 0; i < 10; i++) UartSendString("\xe2\x94\x80");
+"97
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 10 `i 221  ]
+[e $U 222  ]
+[e :U 221 ]
+[e ( _UartSendString (1 :s 16C ]
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 10 `i 221  ]
+[e :U 222 ]
+}
+[; ;ui.h: 98: UartSendString("\xe2\x94\x90");
+"98
+[e ( _UartSendString (1 :s 17C ]
+[; ;ui.h: 99: for (uint8_t i = 0; i < 4; i++) {
+"99
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 224  ]
+[e $U 225  ]
+[e :U 224 ]
+{
+[; ;ui.h: 100: UartCurMove(-12, 1);
+"100
+[e ( _UartCurMove (2 , -> -U -> 12 `i `c -> -> 1 `i `c ]
+[; ;ui.h: 101: UartSendString("\xe2\x94\x82          \xe2\x94\x82");
+"101
+[e ( _UartSendString (1 :s 18C ]
+"102
+}
+"99
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 224  ]
+[e :U 225 ]
+"102
+}
+[; ;ui.h: 102: }
+[; ;ui.h: 103: UartCurMove(-12, 1);
+"103
+[e ( _UartCurMove (2 , -> -U -> 12 `i `c -> -> 1 `i `c ]
+[; ;ui.h: 104: UartSendString("\xe2\x94\x94");
+"104
+[e ( _UartSendString (1 :s 19C ]
+[; ;ui.h: 105: for (uint8_t i = 0; i < 10; i++) UartSendString("\xe2\x94\x80");
+"105
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 10 `i 227  ]
+[e $U 228  ]
+[e :U 227 ]
+[e ( _UartSendString (1 :s 20C ]
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 10 `i 227  ]
+[e :U 228 ]
+}
+[; ;ui.h: 106: UartSendString("\xe2\x94\x98");
+"106
+[e ( _UartSendString (1 :s 21C ]
+[; ;ui.h: 107: UartCurSet(52, 3);
+"107
+[e ( _UartCurSet (2 , -> -> 52 `i `uc -> -> 3 `i `uc ]
+[; ;ui.h: 108: UartSendString("\xe4\xb8\x8b\xe6\xac\xa1\xE5\x87\xBA\xE7\x8E\xB0");
+"108
+[e ( _UartSendString (1 :s 22C ]
+[; ;ui.h: 109: }
+"109
+[e :UE 214 ]
+}
+[; ;tetris.h: 40: typedef struct Tetris {
+[; ;tetris.h: 41: uint8_t map[25], shape, shapeNext, x, y;
+[; ;tetris.h: 42: uint16_t nextMap;
+[; ;tetris.h: 43: queue *randset;
+[; ;tetris.h: 44: } tetris;
+"48 tetris.h
+[v _table `Cui ~T0 @X0 -> 0 `x e ]
+[i _table
+:U ..
+"49
+-> -> 17767 `i `ui
+-> -> 9902 `i `ui
+-> 47768 `ui
+-> 55633 `ui
+"50
+-> -> 25920 `i `ui
+-> 38177 `ui
+-> 42580 `ui
+-> 38993 `ui
+"51
+-> -> 25922 `i `ui
+-> 43345 `ui
+-> 34388 `ui
+-> 38160 `ui
+"52
+-> -> 21537 `i `ui
+-> 42577 `ui
+-> 39013 `ui
+-> 38208 `ui
+"53
+-> -> 25872 `i `ui
+-> 38482 `ui
+-> 43348 `ui
+-> 34113 `ui
+"54
+-> -> 25921 `i `ui
+-> 38481 `ui
+-> 38484 `ui
+-> 38209 `ui
+"56
+-> 43365 `ui
+..
+]
+[; ;tetris.h: 48: const uint16_t table[] = {
+[; ;tetris.h: 49: 0x4567, 0x26ae, 0xba98, 0xd951,
+[; ;tetris.h: 50: 0x6540, 0x9521, 0xa654, 0x9851,
+[; ;tetris.h: 51: 0x6542, 0xa951, 0x8654, 0x9510,
+[; ;tetris.h: 52: 0x5421, 0xa651, 0x9865, 0x9540,
+[; ;tetris.h: 53: 0x6510, 0x9652, 0xa954, 0x8541,
+[; ;tetris.h: 54: 0x6541, 0x9651, 0x9654, 0x9541,
+[; ;tetris.h: 55: 0xa965
+[; ;tetris.h: 56: };
+"58
+[v __randShape `(uc ~T0 @X0 1 ef1`*S137 ]
+{
+[; ;tetris.h: 58: uint8_t _randShape(queue *randset) {
+[e :U __randShape ]
+[v _randset `*S137 ~T0 @X0 1 r1 ]
+[f ]
+"59
+[v _shape `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 59: uint8_t shape = 0, rotate = 0;
+[e = _shape -> -> 0 `i `uc ]
+[v _rotate `uc ~T0 @X0 1 a ]
+[e = _rotate -> -> 0 `i `uc ]
+[; ;tetris.h: 60: for (uint8_t i = 0; i < 3; i++) {
+"60
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 3 `i 232  ]
+[e $U 233  ]
+[e :U 232 ]
+{
+[; ;tetris.h: 61: shape |= (QueuePop(randset) << i);
+"61
+[e =| _shape -> << -> ( _QueuePop (1 _randset `i _i `uc ]
+"62
+}
+"60
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 3 `i 232  ]
+[e :U 233 ]
+"62
+}
+[; ;tetris.h: 62: }
+[; ;tetris.h: 63: AdcGo();
+"63
+[e ( _AdcGo ..  ]
+[; ;tetris.h: 64: while (shape == 7) {
+"64
+[e $U 235  ]
+[e :U 236 ]
+{
+[; ;tetris.h: 65: shape <<= 1;
+"65
+[e =<< _shape -> 1 `i ]
+[; ;tetris.h: 66: shape &= 7;
+"66
+[e =& _shape -> -> 7 `i `uc ]
+[; ;tetris.h: 67: shape |= (QueuePop(randset) & 1);
+"67
+[e =| _shape -> & -> ( _QueuePop (1 _randset `i -> 1 `i `uc ]
+"68
+}
+[e :U 235 ]
+"64
+[e $ == -> _shape `i -> 7 `i 236  ]
+[e :U 237 ]
+[; ;tetris.h: 68: }
+[; ;tetris.h: 69: if (shape == 6) return 24;
+"69
+[e $ ! == -> _shape `i -> 6 `i 238  ]
+[e ) -> -> 24 `i `uc ]
+[e $UE 231  ]
+[e :U 238 ]
+[; ;tetris.h: 70: for (uint8_t i = 0; i < 2; i++) {
+"70
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 239  ]
+[e $U 240  ]
+[e :U 239 ]
+{
+[; ;tetris.h: 71: rotate |= (QueuePop(randset) << i);
+"71
+[e =| _rotate -> << -> ( _QueuePop (1 _randset `i _i `uc ]
+"72
+}
+"70
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 239  ]
+[e :U 240 ]
+"72
+}
+[; ;tetris.h: 72: }
+[; ;tetris.h: 73: return 4 * shape + rotate;
+"73
+[e ) -> + * -> 4 `i -> _shape `i -> _rotate `i `uc ]
+[e $UE 231  ]
+[; ;tetris.h: 74: }
+"74
+[e :UE 231 ]
+}
+"76
+[v __getBlock `(uc ~T0 @X0 1 ef3`*S230`uc`uc ]
+{
+[; ;tetris.h: 76: uint8_t _getBlock(tetris *t, uint8_t x, uint8_t y) {
+[e :U __getBlock ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _y `uc ~T0 @X0 1 r3 ]
+[f ]
+[; ;tetris.h: 77: if (x < 10 && y < 20) {
+"77
+[e $ ! && < -> _x `i -> 10 `i < -> _y `i -> 20 `i 243  ]
+{
+"78
+[v _n `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 78: uint8_t n = 10 * y + x;
+[e = _n -> + * -> 10 `i -> _y `i -> _x `i `uc ]
+[; ;tetris.h: 79: return (t->map[n / 8] >> (n % 8)) & 1;
+"79
+[e ) -> & >> -> *U + &U . *U _t 0 * -> -> / -> _n `i -> 8 `i `ui `ux -> -> # *U &U . *U _t 0 `ui `ux `i % -> _n `i -> 8 `i -> 1 `i `uc ]
+[e $UE 242  ]
+"80
+}
+[e :U 243 ]
+[; ;tetris.h: 80: }
+[; ;tetris.h: 81: return 0;
+"81
+[e ) -> -> 0 `i `uc ]
+[e $UE 242  ]
+[; ;tetris.h: 82: }
+"82
+[e :UE 242 ]
+}
+"84
+[v __clrBlock `(v ~T0 @X0 1 ef3`*S230`uc`uc ]
+{
+[; ;tetris.h: 84: void _clrBlock(tetris *t, uint8_t x, uint8_t y) {
+[e :U __clrBlock ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _y `uc ~T0 @X0 1 r3 ]
+[f ]
+[; ;tetris.h: 85: if (x < 10 && y < 20) {
+"85
+[e $ ! && < -> _x `i -> 10 `i < -> _y `i -> 20 `i 245  ]
+{
+"86
+[v _n `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 86: uint8_t n = 10 * y + x;
+[e = _n -> + * -> 10 `i -> _y `i -> _x `i `uc ]
+[; ;tetris.h: 87: t->map[n / 8] &= ~(1 << n % 8);
+"87
+[e =& *U + &U . *U _t 0 * -> -> / -> _n `i -> 8 `i `ui `ux -> -> # *U &U . *U _t 0 `ui `ux -> ~ << -> 1 `i % -> _n `i -> 8 `i `uc ]
+"88
+}
+[e :U 245 ]
+[; ;tetris.h: 88: }
+[; ;tetris.h: 89: }
+"89
+[e :UE 244 ]
+}
+"91
+[v __setBlock `(v ~T0 @X0 1 ef3`*S230`uc`uc ]
+{
+[; ;tetris.h: 91: void _setBlock(tetris *t, uint8_t x, uint8_t y) {
+[e :U __setBlock ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _y `uc ~T0 @X0 1 r3 ]
+[f ]
+[; ;tetris.h: 92: if (x < 10 && y < 20) {
+"92
+[e $ ! && < -> _x `i -> 10 `i < -> _y `i -> 20 `i 247  ]
+{
+"93
+[v _n `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 93: uint8_t n = 10 * y + x;
+[e = _n -> + * -> 10 `i -> _y `i -> _x `i `uc ]
+[; ;tetris.h: 94: t->map[n / 8] |= (1 << n % 8);
+"94
+[e =| *U + &U . *U _t 0 * -> -> / -> _n `i -> 8 `i `ui `ux -> -> # *U &U . *U _t 0 `ui `ux -> << -> 1 `i % -> _n `i -> 8 `i `uc ]
+"95
+}
+[e :U 247 ]
+[; ;tetris.h: 95: }
+[; ;tetris.h: 96: }
+"96
+[e :UE 246 ]
+}
+"98
+[v __drawBlock `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[; ;tetris.h: 98: void _drawBlock(uint8_t x, uint8_t y) {
+[e :U __drawBlock ]
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;tetris.h: 99: UartCurSet(2 * x + 24, y + 2);
+"99
+[e ( _UartCurSet (2 , -> + * -> 2 `i -> _x `i -> 24 `i `uc -> + -> _y `i -> 2 `i `uc ]
+[; ;tetris.h: 100: UartSendString("\xe2\x96\x88\xe2\x96\x88");
+"100
+[e ( _UartSendString (1 :s 23C ]
+[; ;tetris.h: 101: }
+"101
+[e :UE 248 ]
+}
+"103
+[v __wipeBlock `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[; ;tetris.h: 103: void _wipeBlock(uint8_t x, uint8_t y) {
+[e :U __wipeBlock ]
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;tetris.h: 104: UartCurSet(2 * x + 24, y + 2);
+"104
+[e ( _UartCurSet (2 , -> + * -> 2 `i -> _x `i -> 24 `i `uc -> + -> _y `i -> 2 `i `uc ]
+[; ;tetris.h: 105: UartSendString("  ");
+"105
+[e ( _UartSendString (1 :s 24C ]
+[; ;tetris.h: 106: }
+"106
+[e :UE 249 ]
+}
+"108
+[v __drawShape `(v ~T0 @X0 1 ef4`*S230`uc`uc`uc ]
+{
+[; ;tetris.h: 108: void _drawShape(tetris *t, uint8_t shape, uint8_t x, uint8_t y) {
+[e :U __drawShape ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _shape `uc ~T0 @X0 1 r2 ]
+[v _x `uc ~T0 @X0 1 r3 ]
+[v _y `uc ~T0 @X0 1 r4 ]
+[f ]
+[; ;tetris.h: 110: for (uint16_t p=table[shape],bx,by;bx=(uint8_t)(x+p%4),by=(uint8_t)(y+p/4%4),p;p>>=4) {
+"110
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> _shape `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 254  ]
+[e :U 251 ]
+{
+[; ;tetris.h: 111: if (bx < 10 && by < 20 && _getBlock(t, bx, by)) {
+"111
+[e $ ! && && < _bx -> -> 10 `i `ui < _by -> -> 20 `i `ui != -> ( __getBlock (3 , , _t -> _bx `uc -> _by `uc `i -> -> -> 0 `i `uc `i 255  ]
+{
+[; ;tetris.h: 112: _drawBlock(bx, by);
+"112
+[e ( __drawBlock (2 , -> _bx `uc -> _by `uc ]
+"113
+}
+[e :U 255 ]
+"114
+}
+"110
+[e =>> _p -> 4 `i ]
+[e :U 254 ]
+[e $ != ; ; = _bx -> -> + -> _x `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> _y `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 251  ]
+[e :U 252 ]
+"114
+}
+[; ;tetris.h: 113: }
+[; ;tetris.h: 114: }
+[; ;tetris.h: 115: }
+"115
+[e :UE 250 ]
+}
+"117
+[v __wipeShape `(v ~T0 @X0 1 ef4`*S230`uc`uc`uc ]
+{
+[; ;tetris.h: 117: void _wipeShape(tetris *t, uint8_t shape, uint8_t x, uint8_t y) {
+[e :U __wipeShape ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _shape `uc ~T0 @X0 1 r2 ]
+[v _x `uc ~T0 @X0 1 r3 ]
+[v _y `uc ~T0 @X0 1 r4 ]
+[f ]
+[; ;tetris.h: 119: for (uint16_t p=table[shape],bx,by;bx=(uint8_t)(x+p%4),by=(uint8_t)(y+p/4%4),p;p>>=4) {
+"119
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> _shape `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 260  ]
+[e :U 257 ]
+{
+[; ;tetris.h: 120: if (bx < 10 && by < 20 && !_getBlock(t, bx, by)) {
+"120
+[e $ ! && && < _bx -> -> 10 `i `ui < _by -> -> 20 `i `ui ! != -> ( __getBlock (3 , , _t -> _bx `uc -> _by `uc `i -> -> -> 0 `i `uc `i 261  ]
+{
+[; ;tetris.h: 121: _wipeBlock(bx, by);
+"121
+[e ( __wipeBlock (2 , -> _bx `uc -> _by `uc ]
+"122
+}
+[e :U 261 ]
+"123
+}
+"119
+[e =>> _p -> 4 `i ]
+[e :U 260 ]
+[e $ != ; ; = _bx -> -> + -> _x `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> _y `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 257  ]
+[e :U 258 ]
+"123
+}
+[; ;tetris.h: 122: }
+[; ;tetris.h: 123: }
+[; ;tetris.h: 124: }
+"124
+[e :UE 256 ]
+}
+"140
+[v __shapeNext `(v ~T0 @X0 1 ef1`*S230 ]
+{
+[; ;tetris.h: 140: void _shapeNext(tetris *t) {
+[e :U __shapeNext ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[f ]
+[; ;tetris.h: 141: t->shape = t->shapeNext;
+"141
+[e = . *U _t 1 . *U _t 2 ]
+[; ;tetris.h: 142: t->x = 3;
+"142
+[e = . *U _t 3 -> -> 3 `i `uc ]
+[; ;tetris.h: 146: if (t->shape % 4 == 0 && t->shape != 24) t->y = -2;
+"146
+[e $ ! && == % -> . *U _t 1 `i -> 4 `i -> 0 `i != -> . *U _t 1 `i -> 24 `i 263  ]
+[e = . *U _t 4 -> -U -> 2 `i `uc ]
+[e $U 264  ]
+"147
+[e :U 263 ]
+[; ;tetris.h: 147: else if (t->shape == 1 || t->shape == 3) t->y = -4;
+[e $ ! || == -> . *U _t 1 `i -> 1 `i == -> . *U _t 1 `i -> 3 `i 265  ]
+[e = . *U _t 4 -> -U -> 4 `i `uc ]
+[e $U 266  ]
+"148
+[e :U 265 ]
+[; ;tetris.h: 148: else t->y = -3;
+[e = . *U _t 4 -> -U -> 3 `i `uc ]
+[e :U 266 ]
+[e :U 264 ]
+[; ;tetris.h: 149: t->shapeNext = _randShape(t->randset);
+"149
+[e = . *U _t 2 ( __randShape (1 . *U _t 6 ]
+[; ;tetris.h: 150: for (uint16_t p = table[t->shape]; p; p >>= 4) t->nextMap &= ~(1 << (p & 15));
+"150
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[e $U 270  ]
+[e :U 267 ]
+[e =& . *U _t 5 -> ~ << -> 1 `i & _p -> -> 15 `i `ui `ui ]
+[e =>> _p -> 4 `i ]
+[e :U 270 ]
+[e $ != _p -> -> 0 `i `ui 267  ]
+[e :U 268 ]
+}
+[; ;tetris.h: 151: for (uint16_t p = table[t->shapeNext]; p; p >>= 4) t->nextMap |= (1 << (p & 15));
+"151
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 2 `ux -> -> # *U &U _table `ui `ux ]
+[e $U 274  ]
+[e :U 271 ]
+[e =| . *U _t 5 -> << -> 1 `i & _p -> -> 15 `i `ui `ui ]
+[e =>> _p -> 4 `i ]
+[e :U 274 ]
+[e $ != _p -> -> 0 `i `ui 271  ]
+[e :U 272 ]
+}
+[; ;tetris.h: 152: for (uint16_t p = table[t->shape]; p; p >>= 4) {
+"152
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[e $U 278  ]
+[e :U 275 ]
+{
+[; ;tetris.h: 153: if (!(t->nextMap >> (p & 15))&1) _wipeBlock(p % 4 + 14, p / 4 % 4 + 3);
+"153
+[e $ ! != & -> ! != >> . *U _t 5 & _p -> -> 15 `i `ui -> -> 0 `i `ui `i -> 1 `i -> 0 `i 279  ]
+[e ( __wipeBlock (2 , -> + % _p -> -> 4 `i `ui -> -> 14 `i `ui `uc -> + % / _p -> -> 4 `i `ui -> -> 4 `i `ui -> -> 3 `i `ui `uc ]
+[e :U 279 ]
+"154
+}
+"152
+[e =>> _p -> 4 `i ]
+[e :U 278 ]
+[e $ != _p -> -> 0 `i `ui 275  ]
+[e :U 276 ]
+"154
+}
+[; ;tetris.h: 154: }
+[; ;tetris.h: 155: for (uint16_t p = table[t->shapeNext]; p; p >>= 4) {
+"155
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 2 `ux -> -> # *U &U _table `ui `ux ]
+[e $U 283  ]
+[e :U 280 ]
+{
+[; ;tetris.h: 156: if ((t->nextMap >> (p & 15))&1) _drawBlock(p % 4 + 14, p / 4 % 4 + 3);
+"156
+[e $ ! != & >> . *U _t 5 & _p -> -> 15 `i `ui -> -> 1 `i `ui -> -> 0 `i `ui 284  ]
+[e ( __drawBlock (2 , -> + % _p -> -> 4 `i `ui -> -> 14 `i `ui `uc -> + % / _p -> -> 4 `i `ui -> -> 4 `i `ui -> -> 3 `i `ui `uc ]
+[e :U 284 ]
+"157
+}
+"155
+[e =>> _p -> 4 `i ]
+[e :U 283 ]
+[e $ != _p -> -> 0 `i `ui 280  ]
+[e :U 281 ]
+"157
+}
+[; ;tetris.h: 157: }
+[; ;tetris.h: 158: }
+"158
+[e :UE 262 ]
+}
+"160
+[v _TetrisInit `(v ~T0 @X0 1 ef2`*S230`*S137 ]
+{
+[; ;tetris.h: 160: void TetrisInit(tetris *t, queue *randset) {
+[e :U _TetrisInit ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _randset `*S137 ~T0 @X0 1 r2 ]
+[f ]
+[; ;tetris.h: 161: t->randset = randset;
+"161
+[e = . *U _t 6 _randset ]
+[; ;tetris.h: 162: t->shapeNext = _randShape(randset);
+"162
+[e = . *U _t 2 ( __randShape (1 _randset ]
+[; ;tetris.h: 163: _shapeNext(t);
+"163
+[e ( __shapeNext (1 _t ]
+[; ;tetris.h: 164: }
+"164
+[e :UE 285 ]
+}
+"166
+[v _TetrisMove `(v ~T0 @X0 1 ef2`*S230`uc ]
+{
+[; ;tetris.h: 166: void TetrisMove(tetris *t, uint8_t direction) {
+[e :U _TetrisMove ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[v _direction `uc ~T0 @X0 1 r2 ]
+[f ]
+"167
+[v _x `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 167: uint8_t x = t->x + (direction ? 1 : -1);
+[e = _x -> + -> . *U _t 3 `i ? != -> _direction `i -> -> -> 0 `i `uc `i : -> 1 `i -U -> 1 `i `uc ]
+[; ;tetris.h: 168: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _clrBlock(t, bx, by);
+"168
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 290  ]
+[e :U 287 ]
+[e ( __clrBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 290 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 287  ]
+[e :U 288 ]
+}
+[; ;tetris.h: 170: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) {
+"170
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 294  ]
+[e :U 291 ]
+{
+[; ;tetris.h: 171: if (bx > 9 || _getBlock(t, bx, by)) break;
+"171
+[e $ ! || > _bx -> -> 9 `i `ui != -> ( __getBlock (3 , , _t -> _bx `uc -> _by `uc `i -> -> -> 0 `i `uc `i 295  ]
+[e $U 292  ]
+[e :U 295 ]
+[; ;tetris.h: 172: if (p < 16) t->x = x;
+"172
+[e $ ! < _p -> -> 16 `i `ui 296  ]
+[e = . *U _t 3 _x ]
+[e :U 296 ]
+"173
+}
+"170
+[e =>> _p -> 4 `i ]
+[e :U 294 ]
+[e $ != ; ; = _bx -> -> + -> _x `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 291  ]
+[e :U 292 ]
+"173
+}
+[; ;tetris.h: 173: }
+[; ;tetris.h: 174: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _setBlock(t, bx, by);
+"174
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 300  ]
+[e :U 297 ]
+[e ( __setBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 300 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 297  ]
+[e :U 298 ]
+}
+[; ;tetris.h: 175: if (t->x != x) return;
+"175
+[e $ ! != -> . *U _t 3 `i -> _x `i 301  ]
+[e $UE 286  ]
+[e :U 301 ]
+[; ;tetris.h: 176: _wipeShape(t, t->shape, t->x - (direction ? 1 : -1), t->y);
+"176
+[e ( __wipeShape (4 , , , _t . *U _t 1 -> - -> . *U _t 3 `i ? != -> _direction `i -> -> -> 0 `i `uc `i : -> 1 `i -U -> 1 `i `uc . *U _t 4 ]
+[; ;tetris.h: 177: _drawShape(t, t->shape, t->x, t->y);
+"177
+[e ( __drawShape (4 , , , _t . *U _t 1 . *U _t 3 . *U _t 4 ]
+[; ;tetris.h: 178: UartCurSet(1, 1);
+"178
+[e ( _UartCurSet (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;tetris.h: 179: for (uint8_t i = 0; i < 20; i++) {
+"179
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 20 `i 302  ]
+[e $U 303  ]
+[e :U 302 ]
+{
+[; ;tetris.h: 180: for (uint8_t j = 0; j < 10; j++) {
+"180
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 10 `i 305  ]
+[e $U 306  ]
+[e :U 305 ]
+{
+[; ;tetris.h: 181: UartSendChar(_getBlock(t, j, i) + '0');
+"181
+[e ( _UartSendChar (1 -> + -> ( __getBlock (3 , , _t _j _i `ui -> 48 `ui `uc ]
+"182
+}
+"180
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 10 `i 305  ]
+[e :U 306 ]
+"182
+}
+[; ;tetris.h: 182: }
+[; ;tetris.h: 183: UartCurMove(-10, 1);
+"183
+[e ( _UartCurMove (2 , -> -U -> 10 `i `c -> -> 1 `i `c ]
+"184
+}
+"179
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 20 `i 302  ]
+[e :U 303 ]
+"184
+}
+[; ;tetris.h: 184: }
+[; ;tetris.h: 185: }
+"185
+[e :UE 286 ]
+}
+"187
+[v _TetrisRotate `(v ~T0 @X0 1 ef1`*S230 ]
+{
+[; ;tetris.h: 187: void TetrisRotate(tetris *t) {
+[e :U _TetrisRotate ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[f ]
+[; ;tetris.h: 188: return;
+"188
+[e $UE 308  ]
+[; ;tetris.h: 189: if (t->shape != 24) {
+"189
+[e $ ! != -> . *U _t 1 `i -> 24 `i 309  ]
+{
+[; ;tetris.h: 190: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _clrBlock(t, bx, by);
+"190
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 313  ]
+[e :U 310 ]
+[e ( __clrBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 313 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 310  ]
+[e :U 311 ]
+}
+"191
+[v _shapeRotate `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 191: uint8_t shapeRotate = t->shape, dx, flag = 0;
+[e = _shapeRotate . *U _t 1 ]
+[v _dx `uc ~T0 @X0 1 a ]
+[v _flag `uc ~T0 @X0 1 a ]
+[e = _flag -> -> 0 `i `uc ]
+[; ;tetris.h: 192: for (uint8_t i = 0; i < 3; i++) {
+"192
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 3 `i 314  ]
+[e $U 315  ]
+[e :U 314 ]
+{
+[; ;tetris.h: 193: shapeRotate += (shapeRotate % 4 == 3 ? 1 : -3);
+"193
+[e =+ _shapeRotate -> ? == % -> _shapeRotate `i -> 4 `i -> 3 `i : -> 1 `i -U -> 3 `i `uc ]
+[; ;tetris.h: 194: for (dx = 0; dx <= (t->shape < 4 ? 2 : 1); dx = (dx > 0 ? -dx : 1 - dx)) {
+"194
+{
+[e = _dx -> -> 0 `i `uc ]
+[e $U 320  ]
+[e :U 317 ]
+{
+[; ;tetris.h: 195: for (uint16_t p=table[shapeRotate],bx,by;bx=(uint8_t)(t->x + dx+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) {
+"195
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> _shapeRotate `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 324  ]
+[e :U 321 ]
+{
+[; ;tetris.h: 196: if (bx > 9 || by == 20 || _getBlock(t, bx, by)) break;
+"196
+[e $ ! || || > _bx -> -> 9 `i `ui == _by -> -> 20 `i `ui != -> ( __getBlock (3 , , _t -> _bx `uc -> _by `uc `i -> -> -> 0 `i `uc `i 325  ]
+[e $U 322  ]
+[e :U 325 ]
+[; ;tetris.h: 197: if (p < 16) flag = 1;
+"197
+[e $ ! < _p -> -> 16 `i `ui 326  ]
+[e = _flag -> -> 1 `i `uc ]
+[e :U 326 ]
+"198
+}
+"195
+[e =>> _p -> 4 `i ]
+[e :U 324 ]
+[e $ != ; ; = _bx -> -> + -> + -> . *U _t 3 `i -> _dx `i `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 321  ]
+[e :U 322 ]
+"198
+}
+"199
+}
+"194
+[e = _dx -> ? > -> _dx `i -> 0 `i : -U -> _dx `i - -> 1 `i -> _dx `i `uc ]
+[e :U 320 ]
+[e $ <= -> _dx `i ? < -> . *U _t 1 `i -> 4 `i : -> 2 `i -> 1 `i 317  ]
+[e :U 318 ]
+"199
+}
+[; ;tetris.h: 198: }
+[; ;tetris.h: 199: }
+[; ;tetris.h: 200: if (flag) {
+"200
+[e $ ! != -> _flag `i -> -> -> 0 `i `uc `i 327  ]
+{
+[; ;tetris.h: 201: for (uint16_t p=table[shapeRotate],bx,by;bx=(uint8_t)(t->x + dx+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _setBlock(t, bx, by);
+"201
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> _shapeRotate `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 331  ]
+[e :U 328 ]
+[e ( __setBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 331 ]
+[e $ != ; ; = _bx -> -> + -> + -> . *U _t 3 `i -> _dx `i `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 328  ]
+[e :U 329 ]
+}
+[; ;tetris.h: 202: _wipeShape(t, t->shape, t->x, t->y);
+"202
+[e ( __wipeShape (4 , , , _t . *U _t 1 . *U _t 3 . *U _t 4 ]
+[; ;tetris.h: 203: t->x += dx;
+"203
+[e =+ . *U _t 3 _dx ]
+[; ;tetris.h: 204: t->shape = shapeRotate;
+"204
+[e = . *U _t 1 _shapeRotate ]
+[; ;tetris.h: 205: _wipeShape(t, t->shape, t->x, t->y);
+"205
+[e ( __wipeShape (4 , , , _t . *U _t 1 . *U _t 3 . *U _t 4 ]
+[; ;tetris.h: 206: return;
+"206
+[e $UE 308  ]
+"207
+}
+[e :U 327 ]
+"208
+}
+"192
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 3 `i 314  ]
+[e :U 315 ]
+"208
+}
+[; ;tetris.h: 207: }
+[; ;tetris.h: 208: }
+[; ;tetris.h: 209: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _setBlock(t, bx, by);
+"209
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 335  ]
+[e :U 332 ]
+[e ( __setBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 335 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 332  ]
+[e :U 333 ]
+}
+"210
+}
+[e :U 309 ]
+[; ;tetris.h: 210: }
+[; ;tetris.h: 211: }
+"211
+[e :UE 308 ]
+}
+"213
+[v _TetrisNext `(v ~T0 @X0 1 ef1`*S230 ]
+{
+[; ;tetris.h: 213: void TetrisNext(tetris *t) {
+[e :U _TetrisNext ]
+[v _t `*S230 ~T0 @X0 1 r1 ]
+[f ]
+"214
+[v _y `uc ~T0 @X0 1 a ]
+[; ;tetris.h: 214: uint8_t y = t->y + 1;
+[e = _y -> + -> . *U _t 4 `i -> 1 `i `uc ]
+[; ;tetris.h: 215: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _clrBlock(t, bx, by);
+"215
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 340  ]
+[e :U 337 ]
+[e ( __clrBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 340 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 337  ]
+[e :U 338 ]
+}
+[; ;tetris.h: 216: UartCurSet(12, 1);
+"216
+[e ( _UartCurSet (2 , -> -> 12 `i `uc -> -> 1 `i `uc ]
+[; ;tetris.h: 218: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(y+p/4%4),p;p>>=4) {
+"218
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 344  ]
+[e :U 341 ]
+{
+[; ;tetris.h: 219: if (by == 20) break;
+"219
+[e $ ! == _by -> -> 20 `i `ui 345  ]
+[e $U 342  ]
+[e :U 345 ]
+[; ;tetris.h: 220: if (_getBlock(t, bx, by)) break;
+"220
+[e $ ! != -> ( __getBlock (3 , , _t -> _bx `uc -> _by `uc `i -> -> -> 0 `i `uc `i 346  ]
+[e $U 342  ]
+[e :U 346 ]
+[; ;tetris.h: 221: if (p < 16) t->y = y;
+"221
+[e $ ! < _p -> -> 16 `i `ui 347  ]
+[e = . *U _t 4 _y ]
+[e :U 347 ]
+"222
+}
+"218
+[e =>> _p -> 4 `i ]
+[e :U 344 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> _y `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 341  ]
+[e :U 342 ]
+"222
+}
+[; ;tetris.h: 222: }
+[; ;tetris.h: 223: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) _setBlock(t, bx, by);
+"223
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 351  ]
+[e :U 348 ]
+[e ( __setBlock (3 , , _t -> _bx `uc -> _by `uc ]
+[e =>> _p -> 4 `i ]
+[e :U 351 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 348  ]
+[e :U 349 ]
+}
+[; ;tetris.h: 224: if (t->y != y) {
+"224
+[e $ ! != -> . *U _t 4 `i -> _y `i 352  ]
+{
+[; ;tetris.h: 226: for (uint16_t p=table[t->shape],bx,by;bx=(uint8_t)(t->x+p%4),by=(uint8_t)(t->y+p/4%4),p;p>>=4) {
+"226
+{
+[v _p `ui ~T0 @X0 1 a ]
+[e = _p *U + &U _table * -> . *U _t 1 `ux -> -> # *U &U _table `ui `ux ]
+[v _bx `ui ~T0 @X0 1 a ]
+[v _by `ui ~T0 @X0 1 a ]
+[e $U 356  ]
+[e :U 353 ]
+{
+[; ;tetris.h: 227: if ((int8_t) by < 0) {
+"227
+[e $ ! < -> -> _by `c `i -> 0 `i 357  ]
+{
+[; ;tetris.h: 229: return;
+"229
+[e $UE 336  ]
+"230
+}
+[e :U 357 ]
+"231
+}
+"226
+[e =>> _p -> 4 `i ]
+[e :U 356 ]
+[e $ != ; ; = _bx -> -> + -> . *U _t 3 `ui % _p -> -> 4 `i `ui `uc `ui = _by -> -> + -> . *U _t 4 `ui % / _p -> -> 4 `i `ui -> -> 4 `i `ui `uc `ui _p -> -> 0 `i `ui 353  ]
+[e :U 354 ]
+"231
+}
+[; ;tetris.h: 230: }
+[; ;tetris.h: 231: }
+[; ;tetris.h: 232: _shapeNext(t);
+"232
+[e ( __shapeNext (1 _t ]
+[; ;tetris.h: 233: return;
+"233
+[e $UE 336  ]
+"234
+}
+[e :U 352 ]
+[; ;tetris.h: 234: };
+[; ;tetris.h: 235: _wipeShape(t, t->shape, t->x, t->y - 1);
+"235
+[e ( __wipeShape (4 , , , _t . *U _t 1 . *U _t 3 -> - -> . *U _t 4 `i -> 1 `i `uc ]
+[; ;tetris.h: 236: _drawShape(t, t->shape, t->x, t->y);
+"236
+[e ( __drawShape (4 , , , _t . *U _t 1 . *U _t 3 . *U _t 4 ]
+[; ;tetris.h: 237: UartCurSet(1, 1);
+"237
+[e ( _UartCurSet (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;tetris.h: 238: for (uint8_t i = 0; i < 20; i++) {
+"238
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 20 `i 358  ]
+[e $U 359  ]
+[e :U 358 ]
+{
+[; ;tetris.h: 239: for (uint8_t j = 0; j < 10; j++) {
+"239
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 10 `i 361  ]
+[e $U 362  ]
+[e :U 361 ]
+{
+[; ;tetris.h: 240: UartSendChar(_getBlock(t, j, i) + '0');
+"240
+[e ( _UartSendChar (1 -> + -> ( __getBlock (3 , , _t _j _i `ui -> 48 `ui `uc ]
+"241
+}
+"239
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 10 `i 361  ]
+[e :U 362 ]
+"241
+}
+[; ;tetris.h: 241: }
+[; ;tetris.h: 242: UartCurMove(-10, 1);
+"242
+[e ( _UartCurMove (2 , -> -U -> 10 `i `c -> -> 1 `i `c ]
+"243
+}
+"238
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 20 `i 358  ]
+[e :U 359 ]
+"243
+}
+[; ;tetris.h: 243: }
+[; ;tetris.h: 244: }
+"244
+[e :UE 336 ]
+}
+"41 main.c
+[v _randset `S137 ~T0 @X0 1 e ]
+[; ;main.c: 41: queue randset;
+"42
+[v _game `S230 ~T0 @X0 1 e ]
+[; ;main.c: 42: tetris game;
+"43
+[v _key `uc ~T0 @X0 -> 2 `i e ]
+[; ;main.c: 43: uint8_t key[2];
+"44
+[v _flag `uc ~T0 @X0 1 e ]
+[i _flag
+-> -> 0 `i `uc
+]
+[; ;main.c: 44: uint8_t flag = 0;
+[; ;main.c: 46: void setup(void);
+[v $root$_main `(v ~T0 @X0 0 e ]
+"48
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 48: void main(void) {
+[e :U _main ]
+[f ]
+[; ;main.c: 49: setup();
+"49
+[e ( _setup ..  ]
+[; ;main.c: 50: UIPageMain();
+"50
+[e ( _UIPageMain ..  ]
+[; ;main.c: 51: UIPageMainToGame();
+"51
+[e ( _UIPageMainToGame ..  ]
+[; ;main.c: 52: TetrisInit(&game, &randset);
+"52
+[e ( _TetrisInit (2 , &U _game &U _randset ]
+[; ;main.c: 53: _drawShape(&game, game.shape, game.x, game.y);
+"53
+[e ( __drawShape (4 , , , &U _game . _game 1 . _game 3 . _game 4 ]
+[; ;main.c: 54: for (;;) {
+"54
+{
+[e :U 365 ]
+{
+"55
+}
+[; ;main.c: 55: }
+[e $U 365  ]
+[e :U 366 ]
+}
+[; ;main.c: 56: }
+"56
+[e :UE 364 ]
+}
+"58
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 58: void setup(void) {
+[e :U _setup ]
+[f ]
+[; ;main.c: 61: INTCON |= 0xc0;
+"61
+[e =| _INTCON -> -> 192 `i `uc ]
+[; ;main.c: 62: ADIE = 1;
+"62
+[e = _ADIE -> -> 1 `i `b ]
+[; ;main.c: 63: RCIE = 1;
+"63
+[e = _RCIE -> -> 1 `i `b ]
+[; ;main.c: 64: UartInit();
+"64
+[e ( _UartInit ..  ]
+[; ;main.c: 65: LedInit();
+"65
+[e ( _LedInit ..  ]
+[; ;main.c: 66: AdcInit();
+"66
+[e ( _AdcInit ..  ]
+[; ;main.c: 67: QueueInit(&randset);
+"67
+[e ( _QueueInit (1 &U _randset ]
+[; ;main.c: 68: AdcGo();
+"68
+[e ( _AdcGo ..  ]
+[; ;main.c: 69: }
+"69
+[e :UE 368 ]
+}
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"72
+[v _isr `(v ~T4 @X0 1 ef ]
+{
+[; ;main.c: 71: void __interrupt()
+[; ;main.c: 72: isr(void) {
+[e :U _isr ]
+[f ]
+[; ;main.c: 81: if (ADIF) {
+"81
+[e $ ! _ADIF 370  ]
+{
+[; ;main.c: 82: ADIF = 0;
+"82
+[e = _ADIF -> -> 0 `i `b ]
+[; ;main.c: 83: QueuePush(&randset, AdcVoltL() >> 6);
+"83
+[e ( _QueuePush (2 , &U _randset -> >> -> ( _AdcVoltL ..  `i -> 6 `i `uc ]
+[; ;main.c: 84: if (QueueLength(&randset) < 15) AdcGo();
+"84
+[e $ ! < -> ( _QueueLength (1 &U _randset `i -> 15 `i 371  ]
+[e ( _AdcGo ..  ]
+[e :U 371 ]
+"85
+}
+[e :U 370 ]
+[; ;main.c: 85: }
+[; ;main.c: 86: if (RCIF) {
+"86
+[e $ ! _RCIF 372  ]
+{
+[; ;main.c: 87: RCIF = 0;
+"87
+[e = _RCIF -> -> 0 `i `b ]
+"88
+[v _rc `uc ~T0 @X0 1 a ]
+[; ;main.c: 88: uint8_t rc = RCREG;
+[e = _rc _RCREG ]
+[; ;main.c: 89: if (key[0] == 0x1b) {
+"89
+[e $ ! == -> *U + &U _key * -> -> -> 0 `i `ui `ux -> -> # *U &U _key `ui `ux `i -> 27 `i 373  ]
+{
+[; ;main.c: 90: if (key[1] == '[') {
+"90
+[e $ ! == -> *U + &U _key * -> -> -> 1 `i `ui `ux -> -> # *U &U _key `ui `ux `ui -> 91 `ui 374  ]
+{
+[; ;main.c: 91: if (rc == 'A') {
+"91
+[e $ ! == -> _rc `ui -> 65 `ui 375  ]
+{
+[; ;main.c: 92: TetrisRotate(&game);
+"92
+[e ( _TetrisRotate (1 &U _game ]
+"95
+}
+[; ;main.c: 95: } else if (rc == 'B') {
+[e $U 376  ]
+[e :U 375 ]
+[e $ ! == -> _rc `ui -> 66 `ui 377  ]
+{
+[; ;main.c: 96: TetrisNext(&game);
+"96
+[e ( _TetrisNext (1 &U _game ]
+"99
+}
+[; ;main.c: 99: } else if (rc == 'C') {
+[e $U 378  ]
+[e :U 377 ]
+[e $ ! == -> _rc `ui -> 67 `ui 379  ]
+{
+[; ;main.c: 100: TetrisMove(&game, 1);
+"100
+[e ( _TetrisMove (2 , &U _game -> -> 1 `i `uc ]
+"103
+}
+[; ;main.c: 103: } else if (rc == 'D') {
+[e $U 380  ]
+[e :U 379 ]
+[e $ ! == -> _rc `ui -> 68 `ui 381  ]
+{
+[; ;main.c: 104: TetrisMove(&game, 0);
+"104
+[e ( _TetrisMove (2 , &U _game -> -> 0 `i `uc ]
+"107
+}
+[e :U 381 ]
+"108
+[e :U 380 ]
+[e :U 378 ]
+[e :U 376 ]
+[; ;main.c: 107: }
+[; ;main.c: 108: key[1] = 0;
+[e = *U + &U _key * -> -> -> 1 `i `ui `ux -> -> # *U &U _key `ui `ux -> -> 0 `i `uc ]
+[; ;main.c: 109: key[0] = 0;
+"109
+[e = *U + &U _key * -> -> -> 0 `i `ui `ux -> -> # *U &U _key `ui `ux -> -> 0 `i `uc ]
+"110
+}
+[; ;main.c: 110: } else {
+[e $U 382  ]
+[e :U 374 ]
+{
+[; ;main.c: 111: if (rc == '[') {
+"111
+[e $ ! == -> _rc `ui -> 91 `ui 383  ]
+{
+[; ;main.c: 112: key[1] = '[';
+"112
+[e = *U + &U _key * -> -> -> 1 `i `ui `ux -> -> # *U &U _key `ui `ux -> -> 91 `ui `uc ]
+"113
+}
+[; ;main.c: 113: } else {
+[e $U 384  ]
+[e :U 383 ]
+{
+"115
+}
+[e :U 384 ]
+[; ;main.c: 115: }
+[; ;main.c: 116: if (rc != '[') {
+"116
+[e $ ! != -> _rc `ui -> 91 `ui 385  ]
+{
+[; ;main.c: 117: key[0] = 0;
+"117
+[e = *U + &U _key * -> -> -> 0 `i `ui `ux -> -> # *U &U _key `ui `ux -> -> 0 `i `uc ]
+"118
+}
+[e :U 385 ]
+"119
+}
+[e :U 382 ]
+"120
+}
+[; ;main.c: 118: }
+[; ;main.c: 119: }
+[; ;main.c: 120: } else {
+[e $U 386  ]
+[e :U 373 ]
+{
+[; ;main.c: 121: if (rc == 0x1b) {
+"121
+[e $ ! == -> _rc `i -> 27 `i 387  ]
+{
+[; ;main.c: 122: key[0] = 0x1b;
+"122
+[e = *U + &U _key * -> -> -> 0 `i `ui `ux -> -> # *U &U _key `ui `ux -> -> 27 `i `uc ]
+"123
+}
+[e :U 387 ]
+[; ;main.c: 123: }
+[; ;main.c: 129: if (rc == '\r') {
+"129
+[e $ ! == -> _rc `ui -> 13 `ui 388  ]
+{
+[; ;main.c: 130: if ((flag & 1) == 0) {
+"130
+[e $ ! == & -> _flag `i -> 1 `i -> 0 `i 389  ]
+{
+[; ;main.c: 131: UIClearGame();
+"131
+[e ( _UIClearGame ..  ]
+[; ;main.c: 132: flag |= 1;
+"132
+[e =| _flag -> -> 1 `i `uc ]
+"133
+}
+[e :U 389 ]
+"134
+}
+[; ;main.c: 133: }
+[; ;main.c: 134: } else if (rc == 's') {
+[e $U 390  ]
+[e :U 388 ]
+[e $ ! == -> _rc `ui -> 115 `ui 391  ]
+{
+"136
+}
+[; ;main.c: 136: } else if (rc == 'd') {
+[e $U 392  ]
+[e :U 391 ]
+[e $ ! == -> _rc `ui -> 100 `ui 393  ]
+{
+"153
+}
+[e :U 393 ]
+"177
+[e :U 392 ]
+[e :U 390 ]
+}
+[e :U 386 ]
+"178
+}
+[e :U 372 ]
+[; ;main.c: 153: }
+[; ;main.c: 177: }
+[; ;main.c: 178: }
+[; ;main.c: 179: }
+"179
+[e :UE 369 ]
+}
+[a 1C 27 91 0 ]
+[a 2C 27 91 0 ]
+[a 3C 27 91 0 ]
+[a 4C 27 91 0 ]
+[a 5C 27 91 0 ]
+[a 13C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 24C 32 32 0 ]
+[a 7C 10 13 0 ]
+[a 12C 10 13 0 ]
+[a 6C 12 0 ]
+[a 10C 229 188 160 233 146 138 230 180 139 32 32 233 153 136 230 129 186 228 184 176 0 ]
+[a 22C 228 184 139 230 172 161 229 135 186 231 142 176 0 ]
+[a 9C 230 162 133 229 138 170 230 150 175 231 148 181 228 191 161 228 184 137 231 143 173 0 ]
+[a 14C 226 148 172 0 ]
+[a 21C 226 148 152 0 ]
+[a 8C 228 191 132 32 231 189 151 32 230 150 175 32 230 150 185 32 229 157 151 0 ]
+[a 19C 226 148 148 0 ]
+[a 17C 226 148 144 0 ]
+[a 15C 226 148 140 0 ]
+[a 11C 239 188 136 230 140 137 228 184 139 229 155 158 232 189 166 233 148 174 239 188 137 0 ]
+[a 23C 226 150 136 226 150 136 0 ]
+[a 18C 226 148 130 32 32 32 32 32 32 32 32 32 32 226 148 130 0 ]
+[a 16C 226 148 128 0 ]
+[a 20C 226 148 128 0 ]
